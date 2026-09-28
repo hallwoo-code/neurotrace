@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" shape-rendering="crispEdges">
+  <!-- 24 × 24 viewport; every mark aligns to the 8px grid. -->
+  <symbol id="nt-scan" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="0" y="0" width="8" height="8"/><rect x="16" y="0" width="8" height="8"/><rect x="0" y="16" width="8" height="8"/><rect x="16" y="16" width="8" height="8"/><rect x="8" y="8" width="8" height="8"/></symbol>
+  <symbol id="nt-evidence" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="0" y="0" width="16" height="8"/><rect x="0" y="8" width="8" height="16"/><rect x="8" y="16" width="16" height="8"/><rect x="16" y="8" width="8" height="16"/><rect x="8" y="8" width="8" height="8"/></symbol>
+  <symbol id="nt-check" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="0" y="8" width="8" height="8"/><rect x="8" y="16" width="8" height="8"/><rect x="8" y="8" width="8" height="8"/><rect x="16" y="0" width="8" height="8"/></symbol>
+  <symbol id="nt-pause" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="0" y="0" width="8" height="24"/><rect x="16" y="0" width="8" height="24"/></symbol>
+  <symbol id="nt-reject" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="0" y="0" width="8" height="8"/><rect x="16" y="0" width="8" height="8"/><rect x="8" y="8" width="8" height="8"/><rect x="0" y="16" width="8" height="8"/><rect x="16" y="16" width="8" height="8"/></symbol>
+  <symbol id="nt-download" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="8" y="0" width="8" height="16"/><rect x="0" y="8" width="8" height="8"/><rect x="16" y="8" width="8" height="8"/><rect x="0" y="16" width="24" height="8"/></symbol>
+  <symbol id="nt-close" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><use href="#nt-reject"/></symbol>
+  <symbol id="nt-chevron" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><rect x="0" y="0" width="8" height="8"/><rect x="8" y="8" width="8" height="8"/><rect x="16" y="0" width="8" height="8"/></symbol>
+</svg>

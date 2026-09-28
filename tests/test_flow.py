@@ -115,6 +115,11 @@ class PageTests(unittest.TestCase):
         reject = next(b for b in app.button if b.label == "驳回证据")
         reject.click().run()
         self.assertEqual(len(app.exception), 0)
+        reason = next(field for field in app.text_area if field.label == "驳回原因")
+        reason.set_value("测试：该证据不满足本案限定条件。")
+        commit = next(b for b in app.button if b.label == "提交驳回并重算")
+        commit.click().run()
+        self.assertEqual(len(app.exception), 0)
         case = app.session_state["case"]
         self.assertTrue(any(r["decision"] == "rejected" for r in case["reviews"].values()))
         self.assertEqual(len(app.get("download_button")), 3)

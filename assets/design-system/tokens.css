@@ -1,0 +1,69 @@
+/* NeuroTrace visual tokens — single source of truth for the MVP interface. */
+@font-face {
+  font-family: "NeuroTrace Pixel";
+  src: url("./fonts/z-labs-pixel-12px-cn.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+
+  --nt-canvas: oklch(23% 0.035 252);
+  --nt-surface: oklch(30% 0.047 252);
+  --nt-surface-raised: oklch(35% 0.047 252);
+  --nt-surface-deep: oklch(19% 0.031 252);
+  --nt-paper: oklch(92% 0.012 91);
+  --nt-paper-muted: oklch(84% 0.012 91);
+  --nt-ink: oklch(24% 0.027 252);
+  --nt-ink-muted: oklch(47% 0.022 252);
+  --nt-text: oklch(94% 0.009 91);
+  --nt-text-muted: oklch(76% 0.015 222);
+  --nt-rule: oklch(48% 0.038 252);
+  --nt-rule-strong: oklch(68% 0.053 252);
+
+  --nt-logo-coral: oklch(70% 0.17 25);
+  --nt-teal: oklch(75% 0.13 181);
+  --nt-amber: oklch(78% 0.14 76);
+  --nt-red: oklch(53% 0.14 20);
+  --nt-focus: oklch(83% 0.14 181);
+
+  --nt-font-pixel: "NeuroTrace Pixel", ui-monospace, monospace;
+  --nt-font-body: "NeuroTrace Pixel", "Microsoft YaHei UI", "Segoe UI", sans-serif;
+
+  --nt-text-2xs: 0.625rem;
+  --nt-text-xs: 0.75rem;
+  --nt-text-sm: 0.875rem;
+  --nt-text-base: 1rem;
+  --nt-text-md: 1.25rem;
+  --nt-text-lg: 1.563rem;
+  --nt-text-xl: 1.953rem;
+
+  --nt-space-3xs: 0.125rem;
+  --nt-space-2xs: 0.25rem;
+  --nt-space-xs: 0.5rem;
+  --nt-space-sm: 0.75rem;
+  --nt-space-md: 1rem;
+  --nt-space-lg: 1.5rem;
+  --nt-space-xl: 2rem;
+  --nt-space-2xl: 3rem;
+
+  --nt-pixel: 0.5rem;
+  --nt-border: 0.125rem;
+  --nt-border-thin: 0.0625rem;
+  --nt-radius: 0;
+  --nt-shadow-pixel: 0.25rem 0.25rem 0 var(--nt-surface-deep);
+
+  --nt-dur-micro: 120ms;
+  --nt-dur-short: 220ms;
+  --nt-dur-long: 320ms;
+  --nt-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --nt-ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --nt-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --nt-z-base: 1;
+  --nt-z-raised: 10;
+  --nt-z-dropdown: 100;
+  --nt-z-sticky: 200;
+  --nt-z-modal: 400;
+  --nt-z-toast: 500;
+}
