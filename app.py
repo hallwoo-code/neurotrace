@@ -93,6 +93,7 @@ def investigate_case(question: str, corpus: list[dict], mode: str, base_url: str
     st.session_state.case = None
     try:
         with st.status("正在执行调查", expanded=True) as status:
+            st.image(str(POSTURES / POSES["SCANNING"]), width=112)
             case = investigate(question, corpus, mode, base_url, model, lambda event: st.write(event["message"]))
             st.session_state.case = case
             status.update("调查完成" if not case["error"] else "模型调用未完成", state="complete" if not case["error"] else "error", expanded=False)
@@ -274,6 +275,7 @@ def workbench() -> None:
     with right:
         st.markdown('<section class="nt-shell">', unsafe_allow_html=True)
         st.subheader("真实执行流")
+        st.image(str(POSTURES / POSES["PRESENTING"]), width=112)
         for event in case["events"]:
             stage = html.escape(str(event.get("stage", "event")))
             message = html.escape(str(event.get("message", "")))
