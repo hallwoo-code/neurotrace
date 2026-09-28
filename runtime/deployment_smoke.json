@@ -1,0 +1,16 @@
+{
+  "demo_passed": true,
+  "real_model_passed": true,
+  "model": "modelscope.cn/unsloth/Qwen3.8-27B-GGUF:latest",
+  "elapsed_seconds": 67.921,
+  "cards": 8,
+  "relations": 8,
+  "usage": {
+    "model": "modelscope.cn/unsloth/Qwen3.8-27B-GGUF:latest",
+    "prompt_eval_count": 635,
+    "eval_count": 862,
+    "total_duration": 67918889495
+  },
+  "finding_status": "demo_only",
+  "note": "Real inference on handoff sample evidence, not a scientific accuracy evaluation."
+}

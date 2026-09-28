@@ -1,0 +1,1119 @@
+{
+  "schema_version": "1.0",
+  "generated_date": "2026-09-28",
+  "page_definition": "1-based PDF page number from the local attachment; not the printed journal page label",
+  "allowed_evidence_roles": [
+    "direct_support",
+    "conditional_support",
+    "boundary",
+    "counterevidence",
+    "insufficient"
+  ],
+  "cards": [
+    {
+      "evidence_id": "NT-E001",
+      "title": "Metaphor processing is influenced by stimulus emotionality and task demands: Evidence from ERPs",
+      "bibtex_key": "baiocco_metaphor_2025",
+      "attachment_key": "ZR8VIYWU",
+      "zotero_item_key": "WRJA7MMA",
+      "pdf_page": 1,
+      "original_quote": "Emotional metaphors elicited a more positive LP (450–850 ms) than emotional literal sentences.",
+      "chinese_interpretation": "在被动阅读任务中，情绪隐喻相较情绪字面句诱发更正的晚期正波。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "直接观察到晚期正波差异，但方向依赖任务；同一论文的意义判断任务出现 N400 和晚期负波。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "两个实验比较情绪/中性、隐喻/字面句；实验1做意义判断，实验2被动阅读并偶尔回答理解题。",
+      "participants_and_sample_size": "实验1：39名英语母语本科生，排除6名后 n=33；实验2：36名，排除4名后 n=32。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LP",
+        "LN"
+      ],
+      "electrode_region": "前/后 × 左/右四象限；实验1晚期效应偏左前，实验2 N400 小效应偏右后。",
+      "time_window": "N400 300–450 ms；LP/LN 450–850 ms。",
+      "condition_comparison": "情绪隐喻 vs 情绪字面句，并与中性条件和任务类型交叉比较。",
+      "main_emotion_valence_arousal_result": "情绪性与隐喻性的联合作用随任务要求改变：主动判断出现 N400/LN，被动阅读出现 LP。",
+      "limitations_boundary_confounds": "不能把 LP 方向推广到所有任务；刺激情绪性与隐喻性共同变化，任务注意目标是关键混淆/边界。",
+      "demo_question_ids": [
+        "Q1",
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E002",
+      "title": "Processing newly learned L2 emotional words in contexts: The influence of emotional resonance on N400 and LPC congruency effects",
+      "bibtex_key": "gu_processing_2026",
+      "attachment_key": "RJJGM2QD",
+      "zotero_item_key": "8XBDTNCB",
+      "pdf_page": 10,
+      "original_quote": "L2 participants with higher emotional resonance capabilities showed a larger LPC congruency effect overall.",
+      "chinese_interpretation": "L2 使用者的情绪共鸣能力越高，总体 LPC 情绪一致性效应越大。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "情绪共鸣作为个体差异调节 LPC，但材料是新学伪词且任务为情绪一致性判断。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "将中文伪词与厌恶/悲伤面孔配对学习，次日判断句子与伪词的情绪一致性。",
+      "participants_and_sample_size": "23名中文母语者与20名中文二语者，总 n=43。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPC"
+      ],
+      "electrode_region": "混合效应模型跨所选通道；具体 ROI 需人工复核方法表。",
+      "time_window": "N400 250–430 ms；LPC 450–700 ms。",
+      "condition_comparison": "情绪一致 vs 不一致；厌恶 vs 悲伤；L1 vs L2；L2 情绪共鸣连续变量。",
+      "main_emotion_valence_arousal_result": "不一致试次产生更大 N400/LPC；L2 情绪共鸣更强者 LPC 一致性效应更大，N400 调节还依赖情绪类别。",
+      "limitations_boundary_confounds": "伪词快速学习、仅两类负性情绪、文化匹配的面孔与量表可能影响结果；不能等同一般情绪波动。",
+      "demo_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E003",
+      "title": "Emotion regulation and the late positive potential (LPP) in older adults",
+      "bibtex_key": "meynadasy_emotion_2022",
+      "attachment_key": "JYB536HJ",
+      "zotero_item_key": "FM494I2T",
+      "pdf_page": 1,
+      "original_quote": "We found greater LPP amplitude to emotionally salient compared to neutral stimuli.",
+      "chinese_interpretation": "情绪显著图片相较中性图片诱发更大的 LPP。",
+      "evidence_role": "direct_support",
+      "role_rationale": "在图片任务中直接比较情绪显著与中性刺激并观察 LPP 振幅差异。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "老年人观看不愉快/中性图片，随后自然反应或认知重评；同时记录主观负性情绪。",
+      "participants_and_sample_size": "原始 n=47（60–84岁）；LPP 分析 n=46；高/低情绪幸福感分组。",
+      "eeg_erp_metrics": [
+        "LPP"
+      ],
+      "electrode_region": "LPP 计分区域需人工复核方法表。",
+      "time_window": "指令前与指令后 LPP；精确毫秒窗需人工复核。",
+      "condition_comparison": "情绪显著 vs 中性；自然反应 vs 重评；高 vs 低幸福感。",
+      "main_emotion_valence_arousal_result": "情绪显著刺激 LPP 更大，重评后 LPP 下降；较高抑郁症状者总体 LPP 更钝化。",
+      "limitations_boundary_confounds": "仅老年社区样本；分组未显示 LPP 调节能力差异；实际采用的调节策略未被完整记录。",
+      "demo_question_ids": [
+        "Q1",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E004",
+      "title": "Functional significance of the emotion-related late positive potential",
+      "bibtex_key": "brown_functional_2012",
+      "attachment_key": "M9WULFKJ",
+      "zotero_item_key": "5PICEPUM",
+      "pdf_page": 1,
+      "original_quote": "The results provide preliminary evidence that the LPP reflects a global inhibition of activity in visual cortex.",
+      "chinese_interpretation": "结果初步支持：LPP 可能反映视觉皮层活动的全局抑制，而非单一的情绪强度读数。",
+      "evidence_role": "boundary",
+      "role_rationale": "论文讨论 LPP 的功能机制，并明确使用 preliminary evidence；它限制了把 LPP 直接解释为情绪本身的做法。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "两个实验用负性/中性 IAPS 图片调节 LPP，再用 Gabor 知觉和 P1/N1 探测后续视觉处理。",
+      "participants_and_sample_size": "实验2为25名健康青年；实验1样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "LPP",
+        "P1",
+        "N1"
+      ],
+      "electrode_region": "视觉后部为主；精确电极集合需人工复核。",
+      "time_window": "LPP 主要约 400–600 ms，可延续至刺激后约1秒；P1/N1 为后续探针反应。",
+      "condition_comparison": "负性 vs 中性图片；不同刺激间隔；后续非情绪视觉探针。",
+      "main_emotion_valence_arousal_result": "较大 LPP 与后续视觉反应下降的模式相符，但作者只称为初步证据。",
+      "limitations_boundary_confounds": "短时呈现、视觉图片范式与语言 LPC 不同；相关/间接机制证据不等于 LPP 的唯一功能。",
+      "demo_question_ids": [
+        "Q1"
+      ]
+    },
+    {
+      "evidence_id": "NT-E005",
+      "title": "The P300, the LPP, context updating, and memory: What is the functional significance of the emotion-related late positive potential?",
+      "bibtex_key": "fields_p300_2023",
+      "attachment_key": "I5HF428B",
+      "zotero_item_key": "PFPR5ENP",
+      "pdf_page": 1,
+      "original_quote": "Significance is related to emotional properties, but also to individual differences, task demands, context, and other factors.",
+      "chinese_interpretation": "LPP 所反映的显著性既受情绪属性影响，也受个体差异、任务、语境等因素调节。",
+      "evidence_role": "boundary",
+      "role_rationale": "综述直接指出多重决定因素，反对把 LPP 振幅单独当作唤醒度或情绪波动的普适指标。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "理论综述：用 P300 的情境更新框架讨论情绪相关 LPP、记忆和重评。",
+      "participants_and_sample_size": "综述，不适用单一样本量。",
+      "eeg_erp_metrics": [
+        "P300",
+        "LPP"
+      ],
+      "electrode_region": "跨研究；典型后部到中央正波分布。",
+      "time_window": "跨研究时间窗不一；文中讨论早期/持续 LPP。",
+      "condition_comparison": "综合情绪/中性、记忆、重评、任务相关性与个体差异研究。",
+      "main_emotion_valence_arousal_result": "LPP 与情绪显著性稳定相关，但其功能可由情境更新、记忆和意义评价共同解释。",
+      "limitations_boundary_confounds": "理论整合而非单一实验；LPP 与 P300 的区分、任务定义和记忆结果仍需逐研究限定。",
+      "demo_question_ids": [
+        "Q1",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E006",
+      "title": "Neural correlates of written emotion word processing: A review of recent electrophysiological and hemodynamic neuroimaging studies",
+      "bibtex_key": "citron_neural_2012",
+      "attachment_key": "6KL8UDET",
+      "zotero_item_key": "9473VCG3",
+      "pdf_page": 4,
+      "original_quote": "ERP research revealed inconsistent results ... due to ... little control of the experimental material [and] peculiar designs.",
+      "chinese_interpretation": "情绪词 ERP 研究的结果不一致，部分来自材料控制不足和实验设计差异。",
+      "evidence_role": "boundary",
+      "role_rationale": "该综述把跨研究不一致归因于方法差异，直接限制了对效价/唤醒度效应的强综合。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "综述书面情绪词的 ERP 与 fMRI 研究，重点区分效价、唤醒度及二者交互。",
+      "participants_and_sample_size": "综述，不适用单一样本量。",
+      "eeg_erp_metrics": [
+        "P2",
+        "EPN",
+        "N400",
+        "LPC"
+      ],
+      "electrode_region": "跨研究，常见后部 EPN 与中央/后部 LPC，但分布不统一。",
+      "time_window": "跨研究约 180–800 ms，具体窗随任务而变。",
+      "condition_comparison": "正/负/中性词，效价与唤醒度正交或非正交；词汇判断、情绪 Stroop、语义任务等。",
+      "main_emotion_valence_arousal_result": "效价与唤醒度可独立或交互影响多个成分，但方向和出现时间受任务与材料控制影响。",
+      "limitations_boundary_confounds": "综述含 ERP 与 fMRI，研究设计异质；词频、熟悉度、具体性、自我相关和个体评分均可能混淆。",
+      "demo_question_ids": [
+        "Q1",
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E007",
+      "title": "Event-related potentials, emotion, and emotion regulation: An integrative review",
+      "bibtex_key": "hajcak_event-related_2010",
+      "attachment_key": "B4EXDXY4",
+      "zotero_item_key": "ATKC5SQC",
+      "pdf_page": 6,
+      "original_quote": "Emotional influences on the LPP relate to the emotional intensity of stimuli.",
+      "chinese_interpretation": "综述认为，LPP 的情绪调节与刺激的情绪强度有关。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "支持 LPP 与情绪强度/动机显著性相关，但同段明确排除把效应简单归因于新奇或低级视觉特征。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "整合性综述，涵盖情绪图片、P300/LPP、注意及情绪调节。",
+      "participants_and_sample_size": "综述，不适用单一样本量。",
+      "eeg_erp_metrics": [
+        "P300",
+        "LPP",
+        "temporospatial PCA"
+      ],
+      "electrode_region": "P300 常见枕顶约350 ms；PCA 分离出的 LPP 为枕部至中央，峰约850与1600 ms。",
+      "time_window": "跨研究；包含早期 P300 与持续 LPP。",
+      "condition_comparison": "情绪 vs 中性图片；注意/评价任务；重评、抑制等调节条件。",
+      "main_emotion_valence_arousal_result": "情绪强度和动机显著性通常增强 LPP，注意方式与评价也会改变振幅。",
+      "limitations_boundary_confounds": "综述中的成分命名与时间窗并不统一；P300、LPP 需通过时空 PCA 或设计加以区分。",
+      "demo_question_ids": [
+        "Q1",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E008",
+      "title": "Time course in metaphor processing: A meta-analysis of ERP studies",
+      "bibtex_key": "hao_time_2026",
+      "attachment_key": "NN6UF93U",
+      "zotero_item_key": "9PIPX6I5",
+      "pdf_page": 1,
+      "original_quote": "We synthesized findings from 22 studies (N = 627) examining N400 and/or LPC/P600 ERP responses.",
+      "chinese_interpretation": "该元分析汇总了22项研究、627名参与者的 N400 与 LPC/P600 结果。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "提供跨研究量化证据，但聚焦隐喻常规性而非情绪变量，只能约束 N400/LPC 的机制解释。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "元分析比较隐喻与字面表达，以及新颖与常规隐喻的 N400/LPC。",
+      "participants_and_sample_size": "22项研究，总 N=627，主要为健康青年/大学生。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPC",
+        "P600"
+      ],
+      "electrode_region": "跨研究，ROI 与成分定义不一致。",
+      "time_window": "N400 多在350–500 ms；LPC/P600 窗跨研究变化。",
+      "condition_comparison": "隐喻 vs 字面；新颖 vs 常规隐喻；常规性评分方法为调节变量。",
+      "main_emotion_valence_arousal_result": "总体上隐喻较字面引出更负 N400 与较不正 LPC；晚期结果仍有异质性。",
+      "limitations_boundary_confounds": "晚期持续负波可能被误标为 LPC/P600；样本量和研究功效有限，群体主要是青年。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E009",
+      "title": "Killing a novel metaphor and reviving a dead one: ERP correlates of metaphor conventionalization",
+      "bibtex_key": "goldstein_killing_2012",
+      "attachment_key": "BXUSM4GA",
+      "zotero_item_key": "ZL2RBLSC",
+      "pdf_page": 1,
+      "original_quote": "Novel metaphors elicited smaller N400 and greater LPC amplitudes when participants had explained their meaning.",
+      "chinese_interpretation": "参与者先解释新颖隐喻含义后，再次加工时 N400 较小、LPC 较大。",
+      "evidence_role": "boundary",
+      "role_rationale": "证明 N400/LPC 会被先前解释与学习经历改变，因此成分差异不能只归因于刺激固有属性。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "两词表达意义判断；比较先前解释含义与仅做快速意义判断后的重复加工。",
+      "participants_and_sample_size": "28名希伯来语母语者（12男、16女，平均23岁），均为右利手。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPC"
+      ],
+      "electrode_region": "具体 ROI 需人工复核；文章报告整体 ERP 振幅变化。",
+      "time_window": "N400 与后续 LPC；精确毫秒窗需人工复核。",
+      "condition_comparison": "字面、常规隐喻、新颖隐喻、无关词；先解释 vs 仅快速判断。",
+      "main_emotion_valence_arousal_result": "对新颖隐喻的主动解释降低后续 N400 并提高 LPC；单纯重复判断没有同样效果。",
+      "limitations_boundary_confounds": "效应来自学习/解释操作和重复暴露；不涉及情绪操纵，不能直接支持情绪因果。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E010",
+      "title": "Thirty years and counting: Finding meaning in the N400 component of the event related brain potential (ERP)",
+      "bibtex_key": "kutas_thirty_2011",
+      "attachment_key": "EWRH4QJF",
+      "zotero_item_key": "8HE4L22P",
+      "pdf_page": 1,
+      "original_quote": "The N400 [is] an event-related brain potential response linked to meaning processing.",
+      "chinese_interpretation": "N400 是与意义加工相关的事件相关电位反应。",
+      "evidence_role": "boundary",
+      "role_rationale": "奠定 N400 的广义语义功能边界，防止把 N400 变化专门解释为情绪效应。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "叙述性综述，回顾 N400 的发现、诱发刺激、语义记忆与上下文机制。",
+      "participants_and_sample_size": "综述，不适用单一样本量。",
+      "eeg_erp_metrics": [
+        "N400"
+      ],
+      "electrode_region": "通常中央-顶区最明显，但分布随刺激和参照而变。",
+      "time_window": "典型峰约400 ms；振幅比潜伏期更常受操纵。",
+      "condition_comparison": "跨文字、言语、手语、图片、面孔、动作、声音等多类刺激和语境。",
+      "main_emotion_valence_arousal_result": "N400 对上下文、预期和语义记忆敏感，并非情绪或冲突专属指标。",
+      "limitations_boundary_confounds": "综述覆盖面广但非情绪专门研究；任何情绪解释都要排除可预测性、词汇与语义关联。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E011",
+      "title": "Metaphorical sentences are more emotionally engaging than their literal counterparts",
+      "bibtex_key": "citron_metaphorical_2014",
+      "attachment_key": "EXNK8HBW",
+      "zotero_item_key": "PBD8NAYC",
+      "pdf_page": 2,
+      "original_quote": "Metaphorical statements elicited more activity in the amygdala and anterior hippocampus than literal statements.",
+      "chinese_interpretation": "隐喻句相较字面句引起更强的杏仁核和前海马活动。",
+      "evidence_role": "boundary",
+      "role_rationale": "支持隐喻更具情绪参与，但证据来自 fMRI，不能直接推断 N400/LPC 时间进程。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "fMRI 比较味觉源域隐喻句与匹配的字面释义，并控制熟悉度、意象性、效价和唤醒度。",
+      "participants_and_sample_size": "主实验样本量需人工复核；另有 n=34 的规范化评分样本。",
+      "eeg_erp_metrics": [
+        "fMRI BOLD"
+      ],
+      "electrode_region": "杏仁核、前海马；味觉相关词另见眶额皮层/额盖。",
+      "time_window": "不适用 ERP 时间窗。",
+      "condition_comparison": "常规味觉隐喻 vs 字面释义；词级味觉对照。",
+      "main_emotion_valence_arousal_result": "在效价/唤醒度匹配后，隐喻仍显示更强边缘系统活动。",
+      "limitations_boundary_confounds": "跨模态推断边界：BOLD 活动不能当作 N400/LPC 证据；隐喻限定为味觉源域。",
+      "demo_question_ids": [
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E012",
+      "title": "Electrophysiological correlates of semantic pain processing in the affective priming",
+      "bibtex_key": "gilioli_electrophysiological_2023",
+      "attachment_key": "R2DI5JBM",
+      "zotero_item_key": "GYCYN7VH",
+      "pdf_page": 1,
+      "original_quote": "ERP analyses showed no effect of pain at an early-stage processing (N400).",
+      "chinese_interpretation": "在该情感启动范式中，疼痛语义在早期 N400 阶段没有效应。",
+      "evidence_role": "counterevidence",
+      "role_rationale": "对“情绪/疼痛语义必然调节 N400”的宽泛说法构成直接反例；效应出现在后期 LPP。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "正/负目标词前呈现正性、一般负性或疼痛词启动，参与者判断目标词效价。",
+      "participants_and_sample_size": "样本量在当前锚点中未定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPP"
+      ],
+      "electrode_region": "前/中/后 × 左/中/右 ROI。",
+      "time_window": "N400 早期窗；LPP 约400–700 ms。",
+      "condition_comparison": "启动词效价/疼痛语义 × 目标词正负效价的一致/不一致比较。",
+      "main_emotion_valence_arousal_result": "疼痛启动未改变 N400；疼痛启动后接正性目标时出现更大 LPP。",
+      "limitations_boundary_confounds": "疼痛是特定负性语义域；任务显式要求效价判断，且个体问卷与 ERP 差值无显著相关。",
+      "demo_question_ids": [
+        "Q1",
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E013",
+      "title": "Generalization of reappraisal to novel negative stimuli as evidenced by the LPP",
+      "bibtex_key": "bautista_generalization_2022",
+      "attachment_key": "NMQNTZKE",
+      "zotero_item_key": "PKL57JRG",
+      "pdf_page": 1,
+      "original_quote": "We did not find an effect of reappraisal on the LPP or arousal ratings.",
+      "chinese_interpretation": "在即时重评任务中，重评对 LPP 或唤醒度评分均无显著效应。",
+      "evidence_role": "counterevidence",
+      "role_rationale": "直接反驳“重评必然降低 LPP/唤醒”的无条件表述；后续新图片阶段才出现较小 LPP。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "先对一类负性图片重评、观看另一类负性及中性图片；随后被动观看各类新图片。",
+      "participants_and_sample_size": "n=41。",
+      "eeg_erp_metrics": [
+        "LPP"
+      ],
+      "electrode_region": "中央-顶区最大。",
+      "time_window": "约400 ms 起；论文分时段分析持续 LPP。",
+      "condition_comparison": "重评类负性、仅观看类负性、中性；原图任务 vs 延迟的新图被动观看。",
+      "main_emotion_valence_arousal_result": "即时任务中 LPP/唤醒度无重评效应；延迟阶段，相似新图片的 LPP 较小，但主观评分未泛化。",
+      "limitations_boundary_confounds": "神经指标与主观评分分离；类别泛化、延迟和无意图状态是效应出现的重要条件。",
+      "demo_question_ids": [
+        "Q1",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E014",
+      "title": "Olfactory sensation emotion regulation: The implicit emotion regulation function of positive olfactory stimuli during emotional picture processing",
+      "bibtex_key": "cai_olfactory_2025",
+      "attachment_key": "PIFA9TGH",
+      "zotero_item_key": "54HS2AZY",
+      "pdf_page": 1,
+      "original_quote": "The pleasant odor (lavender) attenuated LPP amplitudes for emotional pictures.",
+      "chinese_interpretation": "薰衣草愉快气味降低了观看情绪图片时的 LPP 振幅。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "支持跨感官的隐性情绪调节，但具体气味、图片效价与注意阶段限定明显。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "在中性、愉快、非愉快气味条件下评价正/负/中性图片的效价与唤醒度并记录 EEG。",
+      "participants_and_sample_size": "n=40。",
+      "eeg_erp_metrics": [
+        "N1",
+        "EPN",
+        "LPP"
+      ],
+      "electrode_region": "后部视觉情绪加工区域；精确电极需人工复核。",
+      "time_window": "早期 N1/EPN；晚期 LPP（精确窗需人工复核）。",
+      "condition_comparison": "气味效价 × 图片效价；薰衣草/柑橘等愉快气味分别比较。",
+      "main_emotion_valence_arousal_result": "愉快气味减弱负性图片的早期注意捕获；薰衣草减弱情绪图片 LPP，并伴随部分效价/唤醒评分变化。",
+      "limitations_boundary_confounds": "气味身份与愉快度未完全等价；跨感觉注意和熟悉度可能混淆，结果不能推广到语言 LPC。",
+      "demo_question_ids": [
+        "Q1",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E015",
+      "title": "Emotional processing in bilinguals: A systematic review aimed at identifying future trends in neurolinguistics",
+      "bibtex_key": "sharif_emotional_2023",
+      "attachment_key": "MUGPJEHX",
+      "zotero_item_key": "IRH47UG6",
+      "pdf_page": 1,
+      "original_quote": "Future research [should focus] on simultaneous bilinguals, extended narratives ... and comparison of different modalities.",
+      "chinese_interpretation": "综述建议未来聚焦同时双语者、连续叙事及跨模态比较。",
+      "evidence_role": "boundary",
+      "role_rationale": "指出现有双语情绪加工证据在群体、材料语境和模态上不足，限制跨语言泛化。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "PRISMA-P 系统综述健康双语者的情绪-语言神经影像、心理生理和认知研究。",
+      "participants_and_sample_size": "系统综述；纳入研究数量与总样本需人工复核。",
+      "eeg_erp_metrics": [
+        "ERP",
+        "N400",
+        "neuroimaging",
+        "psychophysiology"
+      ],
+      "electrode_region": "跨研究。",
+      "time_window": "跨研究。",
+      "condition_comparison": "L1/L2、单词/句子、不同熟练度/暴露度与模态。",
+      "main_emotion_valence_arousal_result": "L2 情绪加工受熟练度、学习语境和暴露度影响，现有结果不支持简单的母语/二语二分。",
+      "limitations_boundary_confounds": "异质方法、去语境单词材料、同时双语者不足和模态不一致。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E016",
+      "title": "An ERP study on the late stage of Chinese metaphor processing",
+      "bibtex_key": "xu_erp_2024",
+      "attachment_key": "GMSHAZEM",
+      "zotero_item_key": "JH5U3XYU",
+      "pdf_page": 1,
+      "original_quote": "UT and LT elicited significantly more negative waveforms than MT in both primes.",
+      "chinese_interpretation": "无关探测词和字面意义相关探测词比隐喻意义相关探测词诱发更负的 N400。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "支持熟悉化与常规隐喻下的隐喻意义直接可及，但证据基于特定 300 ms 启动-探测范式。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "中文常规/熟悉化隐喻作启动，300 ms 后呈现隐喻相关、字面相关、无关或非词探测。",
+      "participants_and_sample_size": "n=28（14男；18–25岁，均为中文母语大学生）。",
+      "eeg_erp_metrics": [
+        "N400",
+        "P600/late stage"
+      ],
+      "electrode_region": "预期中央-顶区 N400 与中央 P600；主要锚点为 N400。",
+      "time_window": "N400 约300–500 ms；晚期窗需人工复核。",
+      "condition_comparison": "MT vs LT vs UT vs 非词，并比较常规与熟悉化隐喻启动。",
+      "main_emotion_valence_arousal_result": "两类启动中 MT 均较 LT/UT 引出更小 N400，常规与熟悉化之间 MT/LT 无差异。",
+      "limitations_boundary_confounds": "启动-探测设计不等同自然句阅读；情绪未被操纵，结果只约束语义/熟悉度解释。",
+      "demo_question_ids": [
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E017",
+      "title": "Bilingual processing mechanisms of scientific metaphors and conventional metaphors: Evidence via a contrastive event-related potentials study",
+      "bibtex_key": "tang_bilingual_2022",
+      "attachment_key": "RUIYLBX6",
+      "zotero_item_key": "M256T5QC",
+      "pdf_page": 1,
+      "original_quote": "English scientific metaphors elicited more negative N400s than Chinese ones at the parietal region.",
+      "chinese_interpretation": "英语科学隐喻在顶区诱发的 N400 比中文科学隐喻更负。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "直接显示语言优势与科学隐喻类型调节 N400/LPC，但不含情绪操纵。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "晚期不平衡双语者加工中文 L1 与英语 L2 的科学隐喻/字面表达。",
+      "participants_and_sample_size": "比较分析报告 n=17（F(1,16)）；完整招募与排除需人工复核。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPC",
+        "late negativity"
+      ],
+      "electrode_region": "顶区为核心；晚期效应扩展至额、中央、顶区并略偏右。",
+      "time_window": "N400 300–500 ms；LPC 550–800 ms。",
+      "condition_comparison": "英语 L2 vs 中文 L1；科学隐喻与常规/字面表达。",
+      "main_emotion_valence_arousal_result": "L2 科学隐喻 N400 更负、LPC 更不正，并出现范围不同的晚期负波。",
+      "limitations_boundary_confounds": "语言熟练度、科学知识和材料语言不可完全分离；作者使用 might/possible，机制解释仍为推断。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E018",
+      "title": "Comprehending scientific metaphors in the bilingual brain: Evidence from event-related potentials",
+      "bibtex_key": "shen_comprehending_2022",
+      "attachment_key": "NT2GFCYR",
+      "zotero_item_key": "KGUAISW6",
+      "pdf_page": 7,
+      "original_quote": "The N400 ... might be related not only to metaphoric factor but also to scientific factor.",
+      "chinese_interpretation": "该研究明确指出，N400 差异不仅可能来自隐喻性，也可能来自科学语境本身。",
+      "evidence_role": "boundary",
+      "role_rationale": "作者提出材料类别混淆，限制把 N400/LPC 差异单独归因于隐喻或语言。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "中英双语者阅读 L1/L2 科学隐喻与字面表达，比较 N400 和晚期成分。",
+      "participants_and_sample_size": "样本量未在当前证据锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPC",
+        "sustained late negativity"
+      ],
+      "electrode_region": "跨额、中央、顶区；晚期分布随语言变化。",
+      "time_window": "N400 约300–500 ms；晚期550–800 ms。",
+      "condition_comparison": "中文/英语科学隐喻与对应字面条件。",
+      "main_emotion_valence_arousal_result": "L2 条件显示更高的检索/整合负担，但科学语境与隐喻性可能共同驱动差异。",
+      "limitations_boundary_confounds": "与 M256T5QC 作者和主题高度重叠，可能存在样本/材料重用，合并前需核验。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E019",
+      "title": "Can clouds dance? Part 2: An ERP investigation of passive conceptual expansion",
+      "bibtex_key": "rutter_can_2012",
+      "attachment_key": "VCSJRZ9S",
+      "zotero_item_key": "P9Y77QL6",
+      "pdf_page": 7,
+      "original_quote": "The absolute difference in N400 amplitude ... novel metaphorical and ... nonsense phrases did not reach significance.",
+      "chinese_interpretation": "新颖隐喻与无意义短语之间的 N400 绝对差异未达到显著。",
+      "evidence_role": "counterevidence",
+      "role_rationale": "限制把 N400 直接解释为成功的创造性整合；线性趋势不等于两条件显著差异。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "参与者按不寻常性与恰当性对两词短语分类，形成新颖隐喻、无意义和字面条件。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "late component"
+      ],
+      "electrode_region": "中央-顶区为主要语义效应；精确 ROI 需人工复核。",
+      "time_window": "N400；后续晚期窗。",
+      "condition_comparison": "新颖隐喻（高不寻常/高恰当）vs 无意义（高/低）vs 字面（低/高）。",
+      "main_emotion_valence_arousal_result": "N400 随不寻常性呈梯度，但新颖隐喻与无意义的直接差异不显著；后期更关联恰当性。",
+      "limitations_boundary_confounds": "条件由参与者主观分类产生；创造性、恰当性和语义关联相互交织。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E020",
+      "title": "An ERP study of passive creative conceptual expansion using a modified alternate uses task",
+      "bibtex_key": "kroger_erp_2013",
+      "attachment_key": "BF5G3TZH",
+      "zotero_item_key": "F84Z4U84",
+      "pdf_page": 1,
+      "original_quote": "ERP activity in this phase indexes appropriateness (nonsense > creative = common).",
+      "chinese_interpretation": "500–900 ms 的晚期活动更像是在区分恰当性：无意义大于创意与常见用途。",
+      "evidence_role": "boundary",
+      "role_rationale": "晚期成分在此任务中索引恰当性而非单纯新颖或情绪，限制 LPC 的单一解释。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "改编用途任务：判断物体-用途组合的不寻常性与恰当性，形成无意义、创意和常见用途。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "late component"
+      ],
+      "electrode_region": "精确 ROI 需人工复核。",
+      "time_window": "N400；探索性晚期窗500–900 ms。",
+      "condition_comparison": "无意义 vs 创意 vs 常见用途。",
+      "main_emotion_valence_arousal_result": "无意义和创意用途相较常见用途均有更大 N400；晚期活动主要区分恰当性。",
+      "limitations_boundary_confounds": "探索性晚期分析；判断任务与语言情绪范式不同，不能直接称为情绪 LPC。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E021",
+      "title": "Conceptual expansion via novel metaphor processing: An ERP replication and extension study examining individual differences in creativity",
+      "bibtex_key": "abraham_conceptual_2021",
+      "attachment_key": "TKFEMVE7",
+      "zotero_item_key": "TMFE3UF6",
+      "pdf_page": 7,
+      "original_quote": "Novel metaphors and nonsense phrases ... were not significantly distinguishable ... in the N400 time-window.",
+      "chinese_interpretation": "新颖隐喻与无意义短语在 N400 时间窗内不可显著区分。",
+      "evidence_role": "counterevidence",
+      "role_rationale": "复现研究仍发现两类新颖材料的 N400 不可分，反对把 N400 当作成功隐喻整合的充分指标。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "以新颖隐喻诱发被动概念扩展，并比较字面、无意义短语及创造力个体差异。",
+      "participants_and_sample_size": "从 F(1,26) 推断分析样本 n=27；需人工核对招募/排除。",
+      "eeg_erp_metrics": [
+        "N400",
+        "post-N400 late component"
+      ],
+      "electrode_region": "精确 ROI 需人工复核。",
+      "time_window": "N400；N400 后晚期成分。",
+      "condition_comparison": "新颖隐喻 vs 无意义 vs 字面；创造力个体差异。",
+      "main_emotion_valence_arousal_result": "N400 更反映原创性/不寻常性，晚期成分更关联恰当性；新颖隐喻与无意义的 N400 差异不显著。",
+      "limitations_boundary_confounds": "样本较小，个体差异分析功效有限；条件仍依赖主观分类。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E022",
+      "title": "Conceptual integration and metaphor: An event-related potential study",
+      "bibtex_key": "coulson_conceptual_2002",
+      "attachment_key": "QBJTFBUJ",
+      "zotero_item_key": "2CC2HQYF",
+      "pdf_page": 1,
+      "original_quote": "Literal endings elicited the smallest N400, metaphors the largest N400.",
+      "chinese_interpretation": "句末字面表达诱发最小 N400，隐喻诱发最大 N400。",
+      "evidence_role": "direct_support",
+      "role_rationale": "对隐喻性与 N400 振幅呈梯度关系的经典直接证据，但不含情绪操纵。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "18名成人阅读以字面、隐喻或中间字面映射结尾的句子。",
+      "participants_and_sample_size": "n=18 正常成人。",
+      "eeg_erp_metrics": [
+        "N400",
+        "posterior positivity"
+      ],
+      "electrode_region": "N400 广泛/中央-顶；后部正波。",
+      "time_window": "N400 300–500 ms；后部晚期正波随后出现。",
+      "condition_comparison": "字面 vs 字面映射 vs 隐喻句末词。",
+      "main_emotion_valence_arousal_result": "N400 随隐喻性增加呈梯度；隐喻还诱发更大的后部正波。",
+      "limitations_boundary_confounds": "早期小样本；句末完形概率、语义关联与隐喻性可能共同影响 N400。",
+      "demo_question_ids": [
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E023",
+      "title": "Comprehending conventional and novel metaphors: An ERP study",
+      "bibtex_key": "lai_comprehending_nodate",
+      "attachment_key": "N34CLWW4",
+      "zotero_item_key": "66IZGBKH",
+      "pdf_page": 7,
+      "original_quote": "Identification of the N400 component was complicated by changes ... across the 300–500 ms interval.",
+      "chinese_interpretation": "300–500 ms 内效应模式和头皮分布变化，使 N400 成分识别变得复杂。",
+      "evidence_role": "boundary",
+      "role_rationale": "论文直接警告固定宽窗可能把不同效应混在一起，适合用于时间窗边界审计。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "用语义判断比较常规隐喻、新颖隐喻、字面句和异常句。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "early N400",
+        "late N400",
+        "P600/late positivity"
+      ],
+      "electrode_region": "头皮分布在300–500 ms内部变化。",
+      "time_window": "需拆分300–500 ms而非单一宽窗；另有晚期正成分。",
+      "condition_comparison": "常规/新颖隐喻、字面与异常句。",
+      "main_emotion_valence_arousal_result": "新颖隐喻与异常句在部分 N400 窗内同样大，常规隐喻更接近字面。",
+      "limitations_boundary_confounds": "成分识别受时间窗和拓扑变化影响；跨论文统一使用“N400 300–500 ms”会掩盖差异。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E024",
+      "title": "Context-modulating effect on processing scientific metaphors: Evidence from ERPs",
+      "bibtex_key": "tang_context-modulating_2025",
+      "attachment_key": "KNEVKX5E",
+      "zotero_item_key": "W4SGNNVL",
+      "pdf_page": 3,
+      "original_quote": "Incongruent contextual conditions evoked larger amplitudes of LPC than congruent ones.",
+      "chinese_interpretation": "不一致语境比一致语境诱发更大的 LPC。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "直接支持语境一致性调节晚期正成分，但效应只在特定科学隐喻类型上稳定。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "句末词范式，操纵图片语境一致性并比较两类科学隐喻、科学字面和无关表达。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "LPC"
+      ],
+      "electrode_region": "多区域分析；精确电极需人工复核。",
+      "time_window": "N400 300–500 ms；LPC 晚期窗。",
+      "condition_comparison": "一致 vs 不一致语境 × 科学隐喻类型/字面/无关表达。",
+      "main_emotion_valence_arousal_result": "语境×类型交互显著；不一致语境增大 LPC，但300–500 ms的语境效应并非所有类型都显著。",
+      "limitations_boundary_confounds": "语境以图片呈现，类型交互强；不能将总体交互写成每一条件都有主效应。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E025",
+      "title": "Conventionality matters in Chinese metaphor but not simile comprehension: Evidence from event-related potentials",
+      "bibtex_key": "yu_conventionality_2024",
+      "attachment_key": "G9WR3PXU",
+      "zotero_item_key": "K2W6GBCV",
+      "pdf_page": 8,
+      "original_quote": "No significant N400 difference [was observed] between conventional and novel similes.",
+      "chinese_interpretation": "常规与新颖明喻之间没有显著 N400 差异。",
+      "evidence_role": "counterevidence",
+      "role_rationale": "说明常规性效应受比喻形式调节，不能从隐喻推广到明喻。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "中文隐喻与明喻理解任务，交叉操纵常规性。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "P600/late positivity"
+      ],
+      "electrode_region": "N400 使用 FCz、Cz、CPz、Pz。",
+      "time_window": "N400 300–500 ms；晚期窗需人工复核。",
+      "condition_comparison": "常规 vs 新颖 × 隐喻 vs 明喻。",
+      "main_emotion_valence_arousal_result": "常规性改变隐喻的 N400，但没有改变明喻的 N400。",
+      "limitations_boundary_confounds": "熟悉度与常规性难完全分离；中文形式标记使隐喻/明喻任务要求不同。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E026",
+      "title": "Disentangling metaphor from context: An ERP study",
+      "bibtex_key": "bambini_disentangling_2016",
+      "attachment_key": "83JC32M9",
+      "zotero_item_key": "UH4G7YZA",
+      "pdf_page": 1,
+      "original_quote": "The N400 effect was visible only in minimal context, whereas the P600 was visible ... with contextual cues.",
+      "chinese_interpretation": "N400 只在最小语境中出现，而 P600 在有无支持语境时都可见。",
+      "evidence_role": "boundary",
+      "role_rationale": "直接证明语境可消除隐喻 N400，却不一定消除 P600，两个成分不能视为同一机制的早晚版本。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "实验1最小语境、实验2显式提供隐喻本体与喻体共同点的支持语境，比较隐喻和字面表达。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "P600"
+      ],
+      "electrode_region": "典型中央-顶 N400/P600；精确电极需人工复核。",
+      "time_window": "N400 约300–500 ms；P600 为后续晚期窗。",
+      "condition_comparison": "隐喻 vs 字面 × 最小语境 vs 支持语境。",
+      "main_emotion_valence_arousal_result": "支持语境消除了 N400，但 P600 仍存在，提示前者偏语境预期/词汇通达，后者偏语用重构。",
+      "limitations_boundary_confounds": "两实验而非完全同一被试内语境操纵；语境支持方式较显式。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E027",
+      "title": "Electrophysiological correlates of conventional metaphor, irony, and literal language processing – An event-related potentials and eLORETA study",
+      "bibtex_key": "deckert_electrophysiological_2021",
+      "attachment_key": "A6AHZ6L2",
+      "zotero_item_key": "KMNAMCKJ",
+      "pdf_page": 1,
+      "original_quote": "A centroparietal N400 (300–450 ms) ... [was] greater for metaphors.",
+      "chinese_interpretation": "隐喻在中央-顶区诱发更大的 300–450 ms N400。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "直接比较常规隐喻、反讽和字面陈述，但部分晚期差异仅为统计/视觉趋势。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "序列陈述 ERP 范式比较常规隐喻、反讽和字面语言，并以 eLORETA 探索源定位。",
+      "participants_and_sample_size": "n=30，均右利手，21–34岁。",
+      "eeg_erp_metrics": [
+        "N400",
+        "Late N400/N500",
+        "LANSW",
+        "eLORETA"
+      ],
+      "electrode_region": "N400中央-顶；晚期 N400 右侧占优；LANSW左额。",
+      "time_window": "N400 300–450 ms；Late N400 450–600 ms；LANSW 450–1000 ms。",
+      "condition_comparison": "常规隐喻 vs 反讽 vs 字面陈述。",
+      "main_emotion_valence_arousal_result": "隐喻显示更大 N400、晚期 N400趋势与显著左额慢负波；晚期不一定表现为正波。",
+      "limitations_boundary_confounds": "部分结果仅趋势；eLORETA为空间估计，不能消除词汇关联性、效价和记忆过程混淆。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E028",
+      "title": "N400 differences between physical and mental metaphors: The role of Theories of Mind",
+      "bibtex_key": "canal_n400_2022",
+      "attachment_key": "ZIRZC9SU",
+      "zotero_item_key": "B5F5XG3T",
+      "pdf_page": 7,
+      "original_quote": "RMET scores [modulated] the N400 ... but [showed] no interaction ... with Metaphor Type.",
+      "chinese_interpretation": "情绪识别能力与两类隐喻的 N400 总体相关，但未与隐喻类型发生交互。",
+      "evidence_role": "boundary",
+      "role_rationale": "个体差异影响 N400，但不能据此断言心理/情绪型隐喻受到特异调节。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "比较物理属性与心理属性隐喻，并以眼神读心测验和动画任务测量心智理论。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "sustained negativity",
+        "GAMM"
+      ],
+      "electrode_region": "300–500 ms 拓扑与 N400 相符；晚期500–800 ms持续负波。",
+      "time_window": "300–500 ms；500–800 ms。",
+      "condition_comparison": "物理隐喻 vs 心理隐喻；RMET/动画任务连续预测。",
+      "main_emotion_valence_arousal_result": "物理隐喻负波更大且持续；RMET 越高总体 N400 越小，但未特异作用于心理隐喻。",
+      "limitations_boundary_confounds": "RMET 同时涉及词汇/情绪识别；相关个体差异不是因果操纵。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E029",
+      "title": "N400 modulations in metaphor evaluation and its associations with attentional systems: A behavioral and ERP study",
+      "bibtex_key": "menashe_n400_2024",
+      "attachment_key": "NZJPCDA6",
+      "zotero_item_key": "SIQQH3LP",
+      "pdf_page": 1,
+      "original_quote": "Novel metaphors produced larger amplitudes over the LH ... than conventional metaphors.",
+      "chinese_interpretation": "新颖隐喻相较常规隐喻在左半球产生更大振幅。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "常规性与注意网络共同影响 N400，但结果来自显式新颖度评价任务。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "隐喻新颖度评价任务同步记录 ERP，并用注意网络测验测量警觉、定向和执行控制。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "attention networks"
+      ],
+      "electrode_region": "左半球差异突出；精确电极 ROI 需人工复核。",
+      "time_window": "常规隐喻 N400 峰更早；主要分析窗需人工复核。",
+      "condition_comparison": "新颖 vs 常规隐喻；三类注意网络与 N400 的相关。",
+      "main_emotion_valence_arousal_result": "新颖隐喻评分更慢、N400 峰更晚且左半球振幅更大；只与执行控制网络相关。",
+      "limitations_boundary_confounds": "显式评价会把注意引向新颖性；注意关联为相关关系，不证明执行控制造成 N400 差异。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E030",
+      "title": "The role of executive control ability in second language metaphor comprehension: Evidence from ERPs and sLORETA",
+      "bibtex_key": "zhu_role_2024",
+      "attachment_key": "9SCEU4Y2",
+      "zotero_item_key": "2YE6KRW9",
+      "pdf_page": 1,
+      "original_quote": "Metaphor familiarity modulated N400 of both groups ... [but] P600 [only] of low executive control.",
+      "chinese_interpretation": "隐喻熟悉度调节两组的 N400，但只调节低执行控制组的 P600。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "直接显示个体执行控制对晚期成分的影响不同于 N400，支持有条件的分阶段解释。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "L2 语义启动/判断任务比较高熟悉隐喻、低熟悉隐喻和字面词对；Stroop 区分执行控制组。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "P600",
+        "sLORETA"
+      ],
+      "electrode_region": "额、中央、顶区；低熟悉隐喻时右额上/中回源活动更强。",
+      "time_window": "N400 300–500 ms；P600 晚期窗。",
+      "condition_comparison": "高/低熟悉隐喻 vs 字面 × 高/低执行控制。",
+      "main_emotion_valence_arousal_result": "低执行控制组总体 N400/P600 更负；熟悉度影响两组 N400，但仅影响低控制组 P600。",
+      "limitations_boundary_confounds": "组别来自 Stroop 分组且为 L2 样本；熟悉度、语言水平和执行控制可能相关。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E031",
+      "title": "The role of literal meaning in figurative language comprehension: Evidence from masked priming ERP",
+      "bibtex_key": "weiland_role_2014",
+      "attachment_key": "WHP53SXM",
+      "zotero_item_key": "3CV763RE",
+      "pdf_page": 1,
+      "original_quote": "With masked priming, the N400-difference was reduced for metaphors and vanished for metonymies.",
+      "chinese_interpretation": "字面意义掩蔽启动后，隐喻的 N400 差异减小，转喻的差异消失。",
+      "evidence_role": "boundary",
+      "role_rationale": "说明无意识启动和修辞类型改变 N400，限制把成分差异当作刺激固有属性。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "跨模态掩蔽启动 ERP；隐喻与转喻分别在有/无字面意义相关启动下呈现。",
+      "participants_and_sample_size": "样本量未在当前锚点中定位。",
+      "eeg_erp_metrics": [
+        "N400",
+        "Late Positivity"
+      ],
+      "electrode_region": "精确 ROI 需人工复核。",
+      "time_window": "N400 约250–500 ms；Late Positivity 约1100–1300 ms。",
+      "condition_comparison": "隐喻/转喻 vs 字面；相关掩蔽启动 vs 无启动。",
+      "main_emotion_valence_arousal_result": "无启动时隐喻呈 N400-晚期正波双相模式；字面相关掩蔽启动减小 N400 差异。",
+      "limitations_boundary_confounds": "极晚正波的定义不同于常见 LPC 窗；掩蔽有效性与跨模态启动是特定条件。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E032",
+      "title": "The time-course of metaphor comprehension: An event-related potential study",
+      "bibtex_key": "pynte_time-course_1996",
+      "attachment_key": "CWQ8AQ7Z",
+      "zotero_item_key": "GG4GWWBS",
+      "pdf_page": 1,
+      "original_quote": "Late Positive Components revealed no significant difference between metaphors and literal sentences.",
+      "chinese_interpretation": "隐喻与字面句在 600–1400 ms 晚期正成分上没有显著差异。",
+      "evidence_role": "counterevidence",
+      "role_rationale": "对“隐喻加工普遍伴随晚期正波”的说法构成直接反证。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "四个实验比较熟悉/不熟悉隐喻与字面句，并操纵前置语境相关性。",
+      "participants_and_sample_size": "至少一个分析显示误差自由度11（推测 n=12）；各实验样本需人工复核。",
+      "eeg_erp_metrics": [
+        "N400",
+        "Late Positive Components"
+      ],
+      "electrode_region": "精确 ROI 需人工复核。",
+      "time_window": "N400 约300–600 ms；LPC 600–1000与1000–1400 ms。",
+      "condition_comparison": "熟悉/不熟悉隐喻 vs 字面；相关/无关前置语境。",
+      "main_emotion_valence_arousal_result": "隐喻句末词 N400 更大，但两个晚期窗都无显著隐喻-字面差异；语境效应早至约300 ms。",
+      "limitations_boundary_confounds": "早期研究样本小；材料与成分分析标准不同于现代研究。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E033",
+      "title": "The concrete processing of Chinese action metaphors: an ERP study",
+      "bibtex_key": "zhang_concrete_2024",
+      "attachment_key": "XR8F463Y",
+      "zotero_item_key": "FMGCRBPQ",
+      "pdf_page": 1,
+      "original_quote": "Met verbs evoked a significantly larger N400 response at frontal brain region compared to Abs verbs.",
+      "chinese_interpretation": "动作隐喻动词相较抽象动词在额区诱发更大的 N400。",
+      "evidence_role": "conditional_support",
+      "role_rationale": "支持隐喻的具体/动作语义调节 N400，但不涉及情绪效价或唤醒度。",
+      "status": "candidate",
+      "verification_flag": "page_located",
+      "research_question_and_paradigm": "比较中文动作动词在隐喻、字面和抽象语境中的加工，以检验具体性/具身效应。",
+      "participants_and_sample_size": "最终样本量未定位；文中报告因伪迹额外排除2人。",
+      "eeg_erp_metrics": [
+        "N400"
+      ],
+      "electrode_region": "额区：隐喻-抽象；后区：隐喻-字面对比。",
+      "time_window": "额区200–500 ms；后区300–500 ms。",
+      "condition_comparison": "隐喻动作动词 vs 字面动作动词 vs 抽象动词。",
+      "main_emotion_valence_arousal_result": "不同对比产生不同头皮分布和时间范围的 N400，提示具体行动语义参与。",
+      "limitations_boundary_confounds": "作者明确指出结果不等同支持“字面优先”；具身/具体性与语义关联仍可能混淆。",
+      "demo_question_ids": [
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E034",
+      "title": "The influence of emotional context on emotional word processing in discourse comprehension: Evidence from event-related potential",
+      "bibtex_key": "li_influence_2024",
+      "attachment_key": "",
+      "zotero_item_key": "PML39LCM",
+      "pdf_page": null,
+      "original_quote": "",
+      "chinese_interpretation": "本地 Zotero 条目没有 PDF，无法核验情绪语境对情绪词 ERP 的原文结果与页码。",
+      "evidence_role": "insufficient",
+      "role_rationale": "只有元数据/摘要线索，禁止写成已证实。",
+      "status": "candidate",
+      "verification_flag": "needs_manual_check",
+      "research_question_and_paradigm": "据摘要：比较中性、正性、负性一致语篇中的情绪词加工。",
+      "participants_and_sample_size": "未定位。",
+      "eeg_erp_metrics": [
+        "ERP"
+      ],
+      "electrode_region": "未定位。",
+      "time_window": "未定位。",
+      "condition_comparison": "正/负/中性情绪语境与情绪词。",
+      "main_emotion_valence_arousal_result": "未核验。",
+      "limitations_boundary_confounds": "缺少本地 PDF；需补附件或人工提供全文。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E035",
+      "title": "Effect of contextual prediction on emotional word processing: An evidence from ERPNR-D-24-00189",
+      "bibtex_key": "li_effect_2024",
+      "attachment_key": "",
+      "zotero_item_key": "CNMC6QPE",
+      "pdf_page": null,
+      "original_quote": "",
+      "chinese_interpretation": "本地 Zotero 条目没有 PDF，无法核验可预测/不可预测语境中不同效价情绪词的 ERP 结果。",
+      "evidence_role": "insufficient",
+      "role_rationale": "摘要指向直接相关问题，但无页码原文，不具备证据资格。",
+      "status": "candidate",
+      "verification_flag": "needs_manual_check",
+      "research_question_and_paradigm": "据摘要：情绪词阅读，操纵语境可预测性和效价。",
+      "participants_and_sample_size": "未定位。",
+      "eeg_erp_metrics": [
+        "ERP"
+      ],
+      "electrode_region": "未定位。",
+      "time_window": "未定位。",
+      "condition_comparison": "可预测 vs 不可预测 × 不同效价情绪词。",
+      "main_emotion_valence_arousal_result": "未核验。",
+      "limitations_boundary_confounds": "缺少本地 PDF；条目标题含投稿编号痕迹，需核对正式发表信息。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E036",
+      "title": "How accentuation influences the processing of emotional words in spoken language: An ERP study",
+      "bibtex_key": "sun_how_2022",
+      "attachment_key": "",
+      "zotero_item_key": "ACJAJ7ZB",
+      "pdf_page": null,
+      "original_quote": "",
+      "chinese_interpretation": "本地 Zotero 条目没有 PDF，无法核验重音如何影响口语情绪词 ERP。",
+      "evidence_role": "insufficient",
+      "role_rationale": "听觉/韵律边界高度相关，但没有可定位原文。",
+      "status": "candidate",
+      "verification_flag": "needs_manual_check",
+      "research_question_and_paradigm": "据标题：重音操纵下的口语情绪词 ERP。",
+      "participants_and_sample_size": "未定位。",
+      "eeg_erp_metrics": [
+        "ERP"
+      ],
+      "electrode_region": "未定位。",
+      "time_window": "未定位。",
+      "condition_comparison": "重音 × 情绪词条件。",
+      "main_emotion_valence_arousal_result": "未核验。",
+      "limitations_boundary_confounds": "缺少本地 PDF；需确认语言、任务和声学控制。",
+      "demo_question_ids": [
+        "Q1",
+        "Q2"
+      ]
+    },
+    {
+      "evidence_id": "NT-E037",
+      "title": "Emotional violation of faces, emojis, and words: Evidence from N400",
+      "bibtex_key": "yu_emotional_2022",
+      "attachment_key": "",
+      "zotero_item_key": "MTRD2WDW",
+      "pdf_page": null,
+      "original_quote": "",
+      "chinese_interpretation": "本地 Zotero 条目没有 PDF，无法核验面孔、emoji 与词语情绪违背的 N400 结果。",
+      "evidence_role": "insufficient",
+      "role_rationale": "可能提供跨模态反证/边界，但无原文页码。",
+      "status": "candidate",
+      "verification_flag": "needs_manual_check",
+      "research_question_and_paradigm": "据标题：跨面孔、emoji、词语的情绪违背 N400。",
+      "participants_and_sample_size": "未定位。",
+      "eeg_erp_metrics": [
+        "N400"
+      ],
+      "electrode_region": "未定位。",
+      "time_window": "未定位。",
+      "condition_comparison": "跨模态情绪一致/违背。",
+      "main_emotion_valence_arousal_result": "未核验。",
+      "limitations_boundary_confounds": "缺少本地 PDF；需确认是否同一任务和同一被试内比较。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    },
+    {
+      "evidence_id": "NT-E038",
+      "title": "Effects of anxiety state on N400 event-related brain potential response to unexpected semantic stimuli",
+      "bibtex_key": "lepock_effects_2024",
+      "attachment_key": "",
+      "zotero_item_key": "FETEEPSJ",
+      "pdf_page": null,
+      "original_quote": "",
+      "chinese_interpretation": "本地 Zotero 条目没有 PDF，无法核验状态焦虑对意外语义刺激 N400 的影响。",
+      "evidence_role": "insufficient",
+      "role_rationale": "可作为个体/状态变量边界候选，但当前只有题名。",
+      "status": "candidate",
+      "verification_flag": "needs_manual_check",
+      "research_question_and_paradigm": "据标题：状态焦虑 × 意外语义刺激的 N400。",
+      "participants_and_sample_size": "未定位。",
+      "eeg_erp_metrics": [
+        "N400"
+      ],
+      "electrode_region": "未定位。",
+      "time_window": "未定位。",
+      "condition_comparison": "高/低状态焦虑或连续焦虑 × 预期/意外语义。",
+      "main_emotion_valence_arousal_result": "未核验。",
+      "limitations_boundary_confounds": "缺少本地 PDF；需确认焦虑分组、任务、语言和统计模型。",
+      "demo_question_ids": [
+        "Q2",
+        "Q3"
+      ]
+    }
+  ]
+}
