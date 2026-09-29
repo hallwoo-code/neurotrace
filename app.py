@@ -68,7 +68,7 @@ h1 {{ font-size: clamp(var(--nt-text-lg), 3vw, var(--nt-text-xl)) !important; }}
 [class*="st-key-pending-"] button {{ background: var(--nt-amber) !important; border-color: var(--nt-amber) !important; color: var(--nt-ink) !important; }}
 [class*="st-key-reject-"] button {{ background: var(--nt-red) !important; border-color: var(--nt-red) !important; color: var(--nt-text) !important; }}
 [data-testid="stExpander"], [data-testid="stVerticalBlockBorderWrapper"] {{ background: var(--nt-surface) !important; color: var(--nt-text) !important; border: var(--nt-border) solid var(--nt-rule-strong) !important; border-radius: var(--nt-radius) !important; box-shadow: var(--nt-shadow-pixel); }}
-[data-testid="stExpander"] summary, [data-testid="stExpander"] summary span {{ color: var(--nt-text) !important; font-family: var(--nt-font-pixel) !important; }}
+[data-testid="stExpander"] summary {{ color: var(--nt-text) !important; font-family: var(--nt-font-pixel) !important; }}
 [data-testid="stMetric"] {{ background: var(--nt-surface) !important; border: var(--nt-border) solid var(--nt-rule) !important; border-radius: var(--nt-radius) !important; padding: var(--nt-space-sm) !important; }}
 [data-testid="stMetricLabel"], [data-testid="stMetricValue"], [data-testid="stMetricDelta"] {{ color: var(--nt-text) !important; font-family: var(--nt-font-pixel) !important; }}
 [data-testid="stAlert"] {{ border: var(--nt-border-thin) solid var(--nt-rule-strong); border-radius: var(--nt-radius); }}
