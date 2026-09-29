@@ -52,3 +52,4 @@ load runtime_corpus_contract_v1.json
 ```
 
 实现后，输出必须包含每案的候选卡 ID、命中卡 ID、反证命中、预测 verdict、最终状态、步骤时延和错误；不得只输出“12/12 通过”。
+
