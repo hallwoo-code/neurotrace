@@ -1,9 +1,0 @@
-[
-  {
-    "date": "2026-09-29",
-    "macrostructure": "Workbench",
-    "theme": "frozen-neurotrace",
-    "enrichment": "existing Trace posture assets",
-    "brief": "Rebuild the Streamlit evidence-audit UI with the frozen NeuroTrace pixel design system."
-  }
-]
