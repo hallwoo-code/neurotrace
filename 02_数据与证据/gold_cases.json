@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {
+      "gold_case_id": "GC-01",
+      "split": "development",
+      "case_id": "NT-DEMO-01",
+      "input_relation_id": "ER-01-1",
+      "expected_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-02",
+      "split": "development",
+      "case_id": "NT-DEMO-01",
+      "input_relation_id": "ER-01-2",
+      "expected_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-03",
+      "split": "development",
+      "case_id": "NT-DEMO-01",
+      "input_relation_id": "ER-01-3",
+      "expected_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-04",
+      "split": "development",
+      "case_id": "NT-DEMO-01",
+      "input_relation_id": "ER-01-4",
+      "expected_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-05",
+      "split": "development",
+      "case_id": "NT-DEMO-02",
+      "input_relation_id": "ER-02-1",
+      "expected_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-06",
+      "split": "development",
+      "case_id": "NT-DEMO-02",
+      "input_relation_id": "ER-02-2",
+      "expected_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-07",
+      "split": "development",
+      "case_id": "NT-DEMO-02",
+      "input_relation_id": "ER-02-3",
+      "expected_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-08",
+      "split": "development",
+      "case_id": "NT-DEMO-02",
+      "input_relation_id": "ER-02-4",
+      "expected_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-09",
+      "split": "holdout",
+      "case_id": "NT-DEMO-03",
+      "input_relation_id": "ER-03-1",
+      "expected_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-10",
+      "split": "holdout",
+      "case_id": "NT-DEMO-03",
+      "input_relation_id": "ER-03-2",
+      "expected_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-11",
+      "split": "holdout",
+      "case_id": "NT-DEMO-03",
+      "input_relation_id": "ER-03-3",
+      "expected_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-12",
+      "split": "holdout",
+      "case_id": "NT-DEMO-03",
+      "input_relation_id": "ER-03-4",
+      "expected_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "evaluation_status": "ready_for_consistency_validation"
+    }
+  ],
+  "note": "Gold values reflect user-reviewed relations. Evaluation checks corpus/fixture consistency only; it is not a model-performance evaluation."
+}

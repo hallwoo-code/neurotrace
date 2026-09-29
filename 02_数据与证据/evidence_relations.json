@@ -1,0 +1,132 @@
+{
+  "schema_version": "2.0",
+  "allowed_evidence_roles": [
+    "direct_support",
+    "conditional_support",
+    "boundary",
+    "counterevidence",
+    "insufficient"
+  ],
+  "relations": [
+    {
+      "relation_id": "ER-01-1",
+      "case_id": "NT-DEMO-01",
+      "evidence_id": "EC-WRJA7MMA-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "conditional_support",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "A"
+    },
+    {
+      "relation_id": "ER-01-2",
+      "case_id": "NT-DEMO-01",
+      "evidence_id": "EC-8XBDTNCB-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "conditional_support",
+      "conditions_or_reason": "用户确认：仅作为特定 L2 学习任务、情绪类别与 LPC 时间窗下的条件支持。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "A"
+    },
+    {
+      "relation_id": "ER-01-3",
+      "case_id": "NT-DEMO-01",
+      "evidence_id": "EC-GYCYN7VH-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "boundary",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "B"
+    },
+    {
+      "relation_id": "ER-01-4",
+      "case_id": "NT-DEMO-01",
+      "evidence_id": "EC-9473VCG3-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "boundary",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "B"
+    },
+    {
+      "relation_id": "ER-02-1",
+      "case_id": "NT-DEMO-02",
+      "evidence_id": "EC-5PICEPUM-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "boundary",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "B"
+    },
+    {
+      "relation_id": "ER-02-2",
+      "case_id": "NT-DEMO-02",
+      "evidence_id": "EC-PFPR5ENP-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "boundary",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "B"
+    },
+    {
+      "relation_id": "ER-02-3",
+      "case_id": "NT-DEMO-02",
+      "evidence_id": "EC-FM494I2T-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "conditional_support",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "A"
+    },
+    {
+      "relation_id": "ER-02-4",
+      "case_id": "NT-DEMO-02",
+      "evidence_id": "EC-ATKC5SQC-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "boundary",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "B"
+    },
+    {
+      "relation_id": "ER-03-1",
+      "case_id": "NT-DEMO-03",
+      "evidence_id": "EC-9PIPX6I5-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "conditional_support",
+      "conditions_or_reason": "用户确认：作为元分析层面的条件支持，不外推为所有隐喻范式的固定模式。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "A"
+    },
+    {
+      "relation_id": "ER-03-2",
+      "case_id": "NT-DEMO-03",
+      "evidence_id": "EC-ZL2RBLSC-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "conditional_support",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "A"
+    },
+    {
+      "relation_id": "ER-03-3",
+      "case_id": "NT-DEMO-03",
+      "evidence_id": "EC-8HE4L22P-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "boundary",
+      "conditions_or_reason": "用户确认：作为 N400 非特异性与语境依赖的边界证据。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "B"
+    },
+    {
+      "relation_id": "ER-03-4",
+      "case_id": "NT-DEMO-03",
+      "evidence_id": "EC-UH4G7YZA-A",
+      "claim_slot": "mechanism_or_boundary",
+      "evidence_role": "conditional_support",
+      "conditions_or_reason": "任务、样本、时间窗或指标定义不一致时仅作条件性关联。",
+      "status": "anchor_confirmed",
+      "manual_review_decision": "A"
+    }
+  ]
+}

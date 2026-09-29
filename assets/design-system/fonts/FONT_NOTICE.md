@@ -6,3 +6,4 @@
 - License: SIL Open Font License 1.1 (`LICENSE-OFL.txt` is included alongside the font).
 - Usage: use 12px or integer multiples where pixel sharpness is essential.
 - Scope: this asset is bundled so the UI does not depend on operating-system font availability.
+

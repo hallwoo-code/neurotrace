@@ -1,0 +1,140 @@
+{
+  "generated_date": "2026-09-28",
+  "evaluation_type": "fixture_consistency_validation",
+  "passed": 12,
+  "failed": 0,
+  "cases": [
+    {
+      "gold_case_id": "GC-01",
+      "split": "development",
+      "relation_id": "ER-01-1",
+      "expected_role": "conditional_support",
+      "observed_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-02",
+      "split": "development",
+      "relation_id": "ER-01-2",
+      "expected_role": "conditional_support",
+      "observed_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-03",
+      "split": "development",
+      "relation_id": "ER-01-3",
+      "expected_role": "boundary",
+      "observed_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-04",
+      "split": "development",
+      "relation_id": "ER-01-4",
+      "expected_role": "boundary",
+      "observed_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-05",
+      "split": "development",
+      "relation_id": "ER-02-1",
+      "expected_role": "boundary",
+      "observed_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-06",
+      "split": "development",
+      "relation_id": "ER-02-2",
+      "expected_role": "boundary",
+      "observed_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-07",
+      "split": "development",
+      "relation_id": "ER-02-3",
+      "expected_role": "conditional_support",
+      "observed_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-08",
+      "split": "development",
+      "relation_id": "ER-02-4",
+      "expected_role": "boundary",
+      "observed_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-09",
+      "split": "holdout",
+      "relation_id": "ER-03-1",
+      "expected_role": "conditional_support",
+      "observed_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-10",
+      "split": "holdout",
+      "relation_id": "ER-03-2",
+      "expected_role": "conditional_support",
+      "observed_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-11",
+      "split": "holdout",
+      "relation_id": "ER-03-3",
+      "expected_role": "boundary",
+      "observed_role": "boundary",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    },
+    {
+      "gold_case_id": "GC-12",
+      "split": "holdout",
+      "relation_id": "ER-03-4",
+      "expected_role": "conditional_support",
+      "observed_role": "conditional_support",
+      "expected_status": "anchor_confirmed",
+      "observed_status": "anchor_confirmed",
+      "result": "pass",
+      "evaluation_type": "fixture_consistency_validation"
+    }
+  ]
+}

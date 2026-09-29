@@ -30,3 +30,4 @@ This package is the implementation source for the frozen low-pixel NeuroTrace re
 4. Keep true execution logs limited to actual system events; never render model chain-of-thought.
 
 The target is visual parity through reusable primitives, not pixel-for-pixel embedding of a static design image.
+

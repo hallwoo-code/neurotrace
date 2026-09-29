@@ -1,0 +1,137 @@
+{
+  "profile_version": "1.0",
+  "profile_date": "2026-09-29",
+  "source_corpus_version_id": "neurotrace-corpus-2026-09-28-v2.3",
+  "language_scope": ["zh", "en"],
+  "retrieval_policy": {
+    "approved_sources_only": true,
+    "network_access": false,
+    "default_top_k_min": 8,
+    "default_top_k_max": 15,
+    "candidate_card_selector": "runtime_corpus_contract_v1.json#default_card_selector",
+    "ranking_signals": ["lexical_alias_match", "slot_match", "semantic_similarity", "evidence_status", "counterevidence_priority"],
+    "counterevidence_rule": "A high-relevance counterevidence card must be surfaced separately and cannot be silently down-ranked below supportive cards."
+  },
+  "claim_slots": [
+    {
+      "slot": "core_relation",
+      "required_for_fast_path": true,
+      "description": "研究对象之间的关系、方向或比较。"
+    },
+    {
+      "slot": "population",
+      "required_for_fast_path": false,
+      "description": "被试人群、年龄、语言背景或临床特征。"
+    },
+    {
+      "slot": "material_or_stimulus",
+      "required_for_fast_path": false,
+      "description": "词、句、图片、面孔、伪词或多模态材料。"
+    },
+    {
+      "slot": "task_or_context",
+      "required_for_fast_path": false,
+      "description": "被动阅读、判断、重评、学习、语境或启动范式。"
+    },
+    {
+      "slot": "independent_variable",
+      "required_for_fast_path": false,
+      "description": "情绪性、唤醒度、效价、情绪共鸣、常规性或语境等操纵。"
+    },
+    {
+      "slot": "erp_component",
+      "required_for_fast_path": true,
+      "description": "N400、LPC、LPP、P600、LP、LN 等成分。"
+    },
+    {
+      "slot": "time_window",
+      "required_for_fast_path": false,
+      "description": "明确毫秒窗或早期/晚期阶段。"
+    },
+    {
+      "slot": "roi_or_electrodes",
+      "required_for_fast_path": false,
+      "description": "ROI、电极或头皮分布。"
+    },
+    {
+      "slot": "effect_direction",
+      "required_for_fast_path": false,
+      "description": "更正、更负、增大、减小、无差异等。"
+    },
+    {
+      "slot": "claim_type",
+      "required_for_fast_path": true,
+      "description": "causal、association、group_difference、exploratory 或 unknown。"
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "emotion",
+      "aliases": ["情绪", "情感", "emotional", "emotion", "affective"],
+      "confusions": ["arousal", "valence", "emotional_resonance", "emotion_regulation"]
+    },
+    {
+      "concept_id": "arousal",
+      "aliases": ["唤醒", "唤醒度", "arousal", "emotional intensity", "情绪强度"],
+      "confusions": ["valence", "salience", "emotion"]
+    },
+    {
+      "concept_id": "valence",
+      "aliases": ["效价", "正性", "负性", "valence", "positive", "negative"],
+      "confusions": ["arousal", "emotion"]
+    },
+    {
+      "concept_id": "emotion_regulation",
+      "aliases": ["情绪调节", "重评", "reappraisal", "emotion regulation"],
+      "confusions": ["arousal", "generalization"]
+    },
+    {
+      "concept_id": "emotional_resonance",
+      "aliases": ["情绪共鸣", "emotional resonance"],
+      "confusions": ["arousal", "emotion_regulation"]
+    },
+    {
+      "concept_id": "metaphor",
+      "aliases": ["隐喻", "比喻", "metaphor", "figurative", "literal"],
+      "confusions": ["conventionality", "context", "semantic"]
+    },
+    {
+      "concept_id": "conventionality",
+      "aliases": ["常规性", "新颖", "熟悉度", "conventionality", "novel", "familiarity"],
+      "confusions": ["context", "learning"]
+    },
+    {
+      "concept_id": "context",
+      "aliases": ["语境", "上下文", "启动", "context", "priming", "prediction"],
+      "confusions": ["task", "conventionality"]
+    },
+    {
+      "concept_id": "n400",
+      "aliases": ["N400", "n400", "语义整合", "semantic integration"],
+      "confusions": ["emotion_specificity", "lpc_p600"]
+    },
+    {
+      "concept_id": "lpc_lpp_p600",
+      "aliases": ["LPC", "LPP", "P600", "LP", "晚期正波", "late positivity", "late positive potential"],
+      "confusions": ["late_negative_wave", "p300", "arousal"]
+    }
+  ],
+  "clarification_triggers": [
+    {
+      "missing_slots": ["core_relation", "erp_component"],
+      "question_focus": "ERP 成分与指标方向",
+      "reason": "不同 ERP 成分不能被当作同一指标检索或综合。"
+    },
+    {
+      "ambiguous_concepts": ["emotion", "arousal", "valence"],
+      "question_focus": "情绪变量的操作化与任务语境",
+      "reason": "情绪、唤醒度和效价不能自动互换。"
+    },
+    {
+      "missing_slots": ["task_or_context", "population"],
+      "question_focus": "任务语境或被试群体",
+      "reason": "这些条件可能改变检索范围与结论类别。"
+    }
+  ]
+}
+

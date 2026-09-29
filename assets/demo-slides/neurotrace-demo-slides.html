@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="NeuroTrace 第三届 DGX Spark 黑客松演示幻灯片">
+  <title>NeuroTrace · DGX Spark 黑客松演示</title>
+  <link rel="stylesheet" href="../design-system/tokens.css">
+  <style>
+    /* Hallmark · macrostructure: Narrative Workflow · tone: technical · anchor hue: midnight navy
+     * genre: atmospheric · theme: frozen-neurotrace · enrichment: existing Trace postures + approved UI captures · nav: N9 · footer: Ft2
+     * audience: DGX Spark hackathon reviewers · use: support a ≤5 minute product demonstration
+     * pre-emit critique: P5 H5 E5 S5 R5 V4
+     */
+    :root {
+      --deck-max: 100rem;
+      --deck-copy: 60ch;
+      --deck-control-size: 2.75rem;
+      --deck-stage: min(100dvh, 56.25vw);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; overflow-x: clip; }
+    body {
+      margin: 0;
+      background: var(--nt-canvas);
+      color: var(--nt-text);
+      font-family: var(--nt-font-body);
+      font-size: var(--nt-text-base);
+      line-height: 1.55;
+    }
+    button { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: var(--nt-border) solid var(--nt-focus); outline-offset: var(--nt-space-xs); }
+
+    .deck {
+      display: grid;
+      min-height: 100dvh;
+      padding: var(--nt-space-sm);
+      place-items: center;
+    }
+    .slide {
+      display: none;
+      width: min(100%, var(--deck-max));
+      min-height: calc(100dvh - (2 * var(--nt-space-sm)));
+      aspect-ratio: auto;
+      position: relative;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: var(--nt-space-md);
+      overflow: clip;
+      padding: clamp(var(--nt-space-md), 3vw, var(--nt-space-2xl));
+      background: var(--nt-canvas);
+      border: var(--nt-border) solid var(--nt-rule-strong);
+      box-shadow: var(--nt-shadow-pixel);
+    }
+    .slide.is-active { display: grid; }
+
+    .deck-head,
+    .deck-foot,
+    .deck-mark,
+    .control-row,
+    .status-row,
+    .chip-row {
+      display: flex;
+      align-items: center;
+    }
+    .deck-head { justify-content: space-between; gap: var(--nt-space-md); }
+    .deck-mark { gap: var(--nt-space-sm); min-width: 0; }
+    .deck-mark img { display: block; width: clamp(8rem, 15vw, 13rem); height: auto; }
+    .deck-kicker,
+    .slide-index,
+    .speaker-note,
+    .micro-label,
+    .timecode {
+      font-family: var(--nt-font-pixel);
+      font-size: var(--nt-text-xs);
+      letter-spacing: .06em;
+    }
+    .deck-kicker { color: var(--nt-text-muted); }
+    .slide-index { color: var(--nt-teal); white-space: nowrap; }
+
+    .deck-foot { justify-content: space-between; gap: var(--nt-space-md); border-block-start: var(--nt-border-thin) solid var(--nt-rule); padding-block-start: var(--nt-space-sm); }
+    .speaker-note { color: var(--nt-text-muted); min-width: 0; }
+    .timecode { color: var(--nt-amber); white-space: nowrap; }
+
+    .slide-body { min-width: 0; min-height: 0; }
+    .title-layout,
+    .verdict-layout,
+    .process-layout,
+    .workbench-layout,
+    .verify-layout,
+    .closing-layout { height: 100%; }
+    .title-layout,
+    .verdict-layout,
+    .workbench-layout,
+    .verify-layout,
+    .closing-layout { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: clamp(var(--nt-space-md), 3vw, var(--nt-space-2xl)); }
+
+    .eyebrow {
+      margin: 0 0 var(--nt-space-sm);
+      color: var(--nt-teal);
+      font-family: var(--nt-font-pixel);
+      font-size: var(--nt-text-xs);
+      letter-spacing: .08em;
+    }
+    h1, h2, h3, p { margin-block-start: 0; }
+    h1, h2, h3 { font-family: var(--nt-font-pixel); font-style: normal; overflow-wrap: anywhere; min-width: 0; }
+    h1 { max-width: 19ch; margin-block-end: var(--nt-space-lg); font-size: clamp(var(--nt-text-xl), 4.5vw, 4.75rem); line-height: 1.1; letter-spacing: .025em; }
+    h2 { margin-block-end: var(--nt-space-md); font-size: clamp(var(--nt-text-lg), 2.5vw, 2.8rem); line-height: 1.2; }
+    h3 { margin-block-end: var(--nt-space-xs); font-size: var(--nt-text-md); line-height: 1.35; }
+    .lede { max-width: var(--deck-copy); margin-block-end: 0; color: var(--nt-text-muted); font-size: clamp(var(--nt-text-base), 1.4vw, var(--nt-text-md)); }
+    .accent-text { color: var(--nt-logo-coral); }
+
+    .trace-portrait {
+      justify-self: end;
+      align-self: stretch;
+      display: grid;
+      place-items: center;
+      min-width: 0;
+      display: none;
+      border-inline-start: var(--nt-border) solid var(--nt-rule);
+      background: var(--nt-surface-deep);
+    }
+    .trace-portrait img { display: block; width: min(100%, 27rem); max-height: 100%; object-fit: contain; image-rendering: pixelated; }
+    .team-line { display: flex; flex-wrap: wrap; gap: var(--nt-space-xs); margin-block-start: var(--nt-space-xl); }
+    .team-chip, .status-tag, .decision-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--nt-space-2xs);
+      min-height: 1.75rem;
+      padding: var(--nt-space-2xs) var(--nt-space-xs);
+      border: var(--nt-border-thin) solid currentColor;
+      font-family: var(--nt-font-pixel);
+      font-size: var(--nt-text-2xs);
+      letter-spacing: .04em;
+    }
+    .team-chip { color: var(--nt-text-muted); }
+    .team-chip::before, .status-tag::before, .decision-tag::before { content: ""; width: var(--nt-space-2xs); height: var(--nt-space-2xs); background: currentColor; }
+
+    .paper-panel {
+      padding: clamp(var(--nt-space-lg), 3vw, var(--nt-space-2xl));
+      background: var(--nt-paper);
+      color: var(--nt-ink);
+      border: var(--nt-border) solid var(--nt-ink);
+      box-shadow: var(--nt-shadow-pixel);
+    }
+    .paper-panel .eyebrow { color: var(--nt-ink-muted); }
+    .paper-panel h2 { max-width: 16ch; margin-block-end: var(--nt-space-lg); }
+    .verdict-copy { margin-block-end: var(--nt-space-md); font-size: clamp(var(--nt-text-md), 2vw, var(--nt-text-lg)); line-height: 1.55; }
+    .boundary-note { margin: 0; padding: var(--nt-space-sm); border-block-start: var(--nt-border-thin) solid var(--nt-ink-muted); color: var(--nt-ink-muted); font-size: var(--nt-text-sm); }
+    .verdict-trace { display: grid; gap: var(--nt-space-md); align-content: center; }
+    .verdict-trace img { display: block; width: min(100%, 27rem); justify-self: center; image-rendering: pixelated; }
+    .status-tag--counter { color: var(--nt-text); border-color: var(--nt-red); }
+    .status-tag--counter::before { background: var(--nt-red); }
+    .status-tag--demo { color: var(--nt-amber); }
+
+    .process-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(var(--nt-space-lg), 4vw, var(--nt-space-2xl)); align-items: center; }
+    .process-list { display: grid; gap: var(--nt-space-sm); margin: 0; padding: 0; list-style: none; counter-reset: process; }
+    .process-list li { display: grid; grid-template-columns: 2.7rem minmax(0, 1fr); gap: var(--nt-space-md); padding-block: var(--nt-space-sm); border-block-start: var(--nt-border-thin) solid var(--nt-rule); counter-increment: process; }
+    .process-list li::before { content: counter(process, decimal-leading-zero); color: var(--nt-logo-coral); font-family: var(--nt-font-pixel); font-size: var(--nt-text-sm); }
+    .process-list strong { display: block; margin-block-end: var(--nt-space-2xs); font-family: var(--nt-font-pixel); font-weight: 400; }
+    .process-list span { display: block; color: var(--nt-text-muted); font-size: var(--nt-text-sm); }
+
+    figure { margin: 0; min-width: 0; }
+    .capture { overflow: clip; border: var(--nt-border) solid var(--nt-rule-strong); background: var(--nt-surface-deep); }
+    .capture img { display: block; width: 100%; height: auto; }
+    figcaption { margin-block-start: var(--nt-space-xs); color: var(--nt-text-muted); font-size: var(--nt-text-xs); }
+
+    .point-list { display: grid; gap: var(--nt-space-sm); margin: 0; padding: 0; list-style: none; }
+    .point-list li { padding-inline-start: var(--nt-space-md); border-inline-start: var(--nt-border) solid var(--nt-rule-strong); color: var(--nt-text-muted); }
+    .point-list strong { display: block; color: var(--nt-text); font-family: var(--nt-font-pixel); font-size: var(--nt-text-sm); font-weight: 400; }
+    .point-list li:nth-child(1) { border-color: var(--nt-teal); }
+    .point-list li:nth-child(2) { border-color: var(--nt-amber); }
+    .point-list li:nth-child(3) { border-color: var(--nt-red); }
+
+    .decision-stack { display: grid; gap: var(--nt-space-sm); }
+    .decision-card { padding: var(--nt-space-sm); border: var(--nt-border-thin) solid var(--nt-rule-strong); background: var(--nt-surface); }
+    .decision-card p { margin: var(--nt-space-xs) 0 0; color: var(--nt-text-muted); font-size: var(--nt-text-sm); }
+    .decision-tag--confirm { color: var(--nt-teal); }
+    .decision-tag--hold { color: var(--nt-amber); }
+    .decision-tag--reject { color: var(--nt-text); border-color: var(--nt-red); }
+    .decision-tag--reject::before { background: var(--nt-red); }
+
+    .closing-copy { align-self: stretch; display: grid; align-content: space-between; gap: var(--nt-space-lg); }
+    .role-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--nt-space-sm); }
+    .role-card { padding: var(--nt-space-md); border: var(--nt-border) solid var(--nt-rule-strong); background: var(--nt-surface); }
+    .role-card p { margin: 0; color: var(--nt-text-muted); font-size: var(--nt-text-xs); }
+    .role-card--lead { border-color: var(--nt-logo-coral); }
+    .role-card--tech { border-color: var(--nt-teal); }
+    .closing-capture { align-self: center; }
+
+    .control-row { position: fixed; z-index: var(--nt-z-toast); inset-block-end: var(--nt-space-md); inset-inline-end: var(--nt-space-md); gap: var(--nt-space-xs); }
+    .slide-control {
+      display: inline-grid;
+      width: var(--deck-control-size);
+      height: var(--deck-control-size);
+      place-items: center;
+      padding: 0;
+      border: var(--nt-border) solid var(--nt-rule-strong);
+      background: var(--nt-surface-raised);
+      color: var(--nt-text);
+      cursor: pointer;
+      transition: background-color var(--nt-dur-short) var(--nt-ease-out), color var(--nt-dur-short) var(--nt-ease-out), transform var(--nt-dur-micro) var(--nt-ease-out);
+    }
+    .slide-control:hover, .slide-control.is-hover { background: var(--nt-surface-deep); }
+    .slide-control:active, .slide-control.is-active { transform: translateY(var(--nt-space-3xs)); }
+    .slide-control:disabled, .slide-control[data-state="disabled"] { border-color: var(--nt-rule); background: var(--nt-surface-deep); color: var(--nt-text-muted); cursor: not-allowed; opacity: .7; }
+    .slide-control[data-state="loading"] { color: var(--nt-amber); }
+    .slide-control[data-state="error"] { color: var(--nt-red); }
+    .slide-control[data-state="success"] { color: var(--nt-teal); }
+    .slide-control svg { width: var(--nt-space-md); height: var(--nt-space-md); fill: currentColor; }
+    .screen-reader { position: absolute; width: var(--nt-border-thin); height: var(--nt-border-thin); overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+    .is-active .slide-body > * { animation: slide-enter var(--nt-dur-long) var(--nt-ease-out) both; }
+    @keyframes slide-enter { from { opacity: 0; transform: translateY(var(--nt-space-xs)); } to { opacity: 1; transform: none; } }
+
+    @media (min-width: 40rem) {
+      .role-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+      .capture { max-width: 48rem; }
+    }
+    @media (min-width: 60rem) and (min-aspect-ratio: 4 / 3) {
+      .slide { min-height: min(var(--deck-stage), 56.25rem); aspect-ratio: 16 / 9; }
+      .title-layout { grid-template-columns: minmax(0, 1.15fr) minmax(13rem, .85fr); }
+      .verdict-layout { grid-template-columns: minmax(0, 1fr) minmax(17rem, .9fr); }
+      .workbench-layout { grid-template-columns: minmax(15rem, .78fr) minmax(0, 1.22fr); }
+      .verify-layout { grid-template-columns: minmax(0, 1.18fr) minmax(15rem, .82fr); }
+      .closing-layout { grid-template-columns: minmax(0, .94fr) minmax(16rem, 1.06fr); }
+      .process-layout { grid-template-columns: minmax(0, 1.2fr) minmax(15rem, .8fr); }
+      .trace-portrait { display: grid; }
+    }
+    @media (max-width: 39.99rem) {
+      .deck { padding: var(--nt-space-xs); place-items: start center; }
+      .slide { gap: var(--nt-space-sm); padding: var(--nt-space-md); border-width: var(--nt-border-thin); }
+      .deck-kicker { display: none; }
+      .deck-mark img { width: 8rem; }
+      h1 { margin-block-end: var(--nt-space-md); font-size: clamp(var(--nt-text-lg), 10vw, var(--nt-text-xl)); }
+      h2 { font-size: var(--nt-text-lg); }
+      .lede, .verdict-copy { font-size: var(--nt-text-base); }
+      .paper-panel { padding: var(--nt-space-md); }
+      .verdict-trace { display: none; }
+      .process-list li { grid-template-columns: 2.25rem minmax(0, 1fr); gap: var(--nt-space-sm); }
+      .role-grid { grid-template-columns: minmax(0, 1fr); }
+      .deck-foot { align-items: flex-start; flex-direction: column; gap: var(--nt-space-xs); }
+      .control-row { inset-block-end: var(--nt-space-xs); inset-inline-end: var(--nt-space-xs); }
+    }
+    @media (hover: hover) and (pointer: fine) { .capture:hover { border-color: var(--nt-teal); } }
+    @media (pointer: coarse) { .slide-control { width: 3rem; height: 3rem; } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 150ms !important; animation-iteration-count: 1 !important; transition-duration: 150ms !important; }
+      .is-active .slide-body > * { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-label="NeuroTrace 演示幻灯片">
+    <section class="slide is-active" data-slide="0" aria-labelledby="slide-title">
+      <header class="deck-head">
+        <div class="deck-mark"><img src="../design-system/neurotrace-logo.svg" alt="NEUROTRACE"></div>
+        <span class="deck-kicker">第三届 DGX Spark 黑客松比赛</span>
+        <span class="slide-index">01 / 06</span>
+      </header>
+      <div class="slide-body title-layout">
+        <div>
+          <p class="eyebrow">LONGFUGE · 现场演示</p>
+          <h1 id="slide-title">让文献结论<br><span class="accent-text">保留边界。</span></h1>
+          <p class="lede">NeuroTrace 把研究问题带入一条可回查的本地证据链：输入问题、定位证据、保留反证与条件，再形成有边界的判断。</p>
+          <div class="team-line" aria-label="团队信息">
+            <span class="team-chip">队伍 · Longfuge</span>
+            <span class="team-chip">队长 · 吴昊</span>
+            <span class="team-chip">队员 · 梁文豪</span>
+          </div>
+        </div>
+        <figure class="trace-portrait">
+          <img src="../trace-postures/trace-presenting.png" width="720" height="720" alt="Trace 呈现调查结果的像素角色">
+        </figure>
+      </div>
+      <footer class="deck-foot"><span class="speaker-note">开场：一句话说明产品要解决的问题。</span><span class="timecode">00:00–00:20</span></footer>
+    </section>
+
+    <section class="slide" data-slide="1" aria-labelledby="verdict-title" hidden>
+      <header class="deck-head">
+        <div class="deck-mark"><img src="../design-system/neurotrace-logo.svg" alt="NEUROTRACE"></div>
+        <span class="deck-kicker">先给判断，再展示过程</span>
+        <span class="slide-index">02 / 06</span>
+      </header>
+      <div class="slide-body verdict-layout">
+        <article class="paper-panel">
+          <p class="eyebrow">示例问题 · 情绪唤醒度是否会影响 LPC 振幅？</p>
+          <h2 id="verdict-title">示例结论：<br>当前说法存在争议</h2>
+          <p class="verdict-copy">当前材料中存在反证或不一致结果，不能把这个说法作为普遍结论。</p>
+          <p class="boundary-note">这是“流程演示，非科研结论”。系统保留的是当前样例资料内的判断与条件，不替代研究者的科学结论。</p>
+        </article>
+        <div class="verdict-trace">
+          <div class="status-row"><span class="status-tag status-tag--counter">反证 / 不一致</span><span class="status-tag status-tag--demo">演示资料</span></div>
+          <img src="../trace-postures/trace-thinking.png" width="720" height="720" alt="Trace 思考姿态">
+        </div>
+      </div>
+      <footer class="deck-foot"><span class="speaker-note">先展示结果：系统不把相关线索包装成确定的普遍结论。</span><span class="timecode">00:20–00:45</span></footer>
+    </section>
+
+    <section class="slide" data-slide="2" aria-labelledby="process-title" hidden>
+      <header class="deck-head">
+        <div class="deck-mark"><img src="../design-system/neurotrace-logo.svg" alt="NEUROTRACE"></div>
+        <span class="deck-kicker">从问题到可审计判断</span>
+        <span class="slide-index">03 / 06</span>
+      </header>
+      <div class="slide-body process-layout">
+        <div>
+          <p class="eyebrow">现场演示路径</p>
+          <h2 id="process-title">不是黑箱问答，<br>而是一条调查流程。</h2>
+          <ol class="process-list">
+            <li><div><strong>提出研究问题</strong><span>输入待核验的论断；若关键条件不足，系统只提出真正影响结论范围的澄清项。</span></div></li>
+            <li><div><strong>扫描本地资料</strong><span>演示模式使用交接包样例；真实模式可改用本地上传 PDF，过程状态如实呈现。</span></div></li>
+            <li><div><strong>组织证据角色</strong><span>每条卡片呈现支持、限定、反证或证据不足，并保留页码与条件。</span></div></li>
+            <li><div><strong>形成可复核输出</strong><span>人工核验关键锚点后，导出卷宗；文献事实与研究推论明确分离。</span></div></li>
+          </ol>
+        </div>
+        <figure class="capture">
+          <img src="../ui-mockups/neurotrace-entry-listening-review-v3.png" width="1440" height="900" alt="NeuroTrace 新建调查界面">
+          <figcaption>现场操作：输入示例问题，点击“开始调查”。</figcaption>
+        </figure>
+      </div>
+      <footer class="deck-foot"><span class="speaker-note">进入网页：输入问题，展示 Trace 从聆听到扫描与真实运行提示。</span><span class="timecode">00:45–01:25</span></footer>
+    </section>
+
+    <section class="slide" data-slide="3" aria-labelledby="workbench-title" hidden>
+      <header class="deck-head">
+        <div class="deck-mark"><img src="../design-system/neurotrace-logo.svg" alt="NEUROTRACE"></div>
+        <span class="deck-kicker">调查工作台</span>
+        <span class="slide-index">04 / 06</span>
+      </header>
+      <div class="slide-body workbench-layout">
+        <div>
+          <p class="eyebrow">核心功能 01</p>
+          <h2 id="workbench-title">把不一致结果<br>留在结论里。</h2>
+          <ul class="point-list">
+            <li><strong>本案基线</strong>保留原始问题与澄清条件，避免后来解释覆盖最初的研究范围。</li>
+            <li><strong>结论与证据看板</strong>在同一视图中并列证据关系、条件矩阵与待检验假设。</li>
+            <li><strong>真实执行流</strong>只记录检索、比对、核验等实际事件，不伪造模型内部思维过程。</li>
+          </ul>
+        </div>
+        <figure class="capture">
+          <img src="../ui-mockups/neurotrace-workbench-presenting-review-v2.png" width="1440" height="900" alt="NeuroTrace 三栏调查工作台">
+          <figcaption>讲解顺序：当前判断 → 证据卡的角色与条件 → 右侧真实执行流。</figcaption>
+        </figure>
+      </div>
+      <footer class="deck-foot"><span class="speaker-note">停留在三栏工作台：只展开两到三张关键证据卡，避免逐卡朗读。</span><span class="timecode">01:25–02:35</span></footer>
+    </section>
+
+    <section class="slide" data-slide="4" aria-labelledby="verify-title" hidden>
+      <header class="deck-head">
+        <div class="deck-mark"><img src="../design-system/neurotrace-logo.svg" alt="NEUROTRACE"></div>
+        <span class="deck-kicker">关键核验与判断重算</span>
+        <span class="slide-index">05 / 06</span>
+      </header>
+      <div class="slide-body verify-layout">
+        <figure class="capture">
+          <img src="../ui-mockups/neurotrace-critical-verification-review-v3.png" width="1440" height="900" alt="NeuroTrace 关键核验界面">
+          <figcaption>先处理最可能改变最终判断的证据，而非无差别浏览文献卡。</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">核心功能 02</p>
+          <h2 id="verify-title">每张关键证据，<br>都有明确处置。</h2>
+          <div class="decision-stack" aria-label="证据处置选项">
+            <article class="decision-card"><span class="decision-tag decision-tag--confirm">确认采用</span><p>认可页码锚点与证据角色，纳入当前判断。</p></article>
+            <article class="decision-card"><span class="decision-tag decision-tag--hold">暂缓核验</span><p>保留疑点，不让不确定材料伪装成已确认事实。</p></article>
+            <article class="decision-card"><span class="decision-tag decision-tag--reject">驳回</span><p>记录驳回原因，系统随即重算关联命题与条件矩阵。</p></article>
+          </div>
+        </div>
+      </div>
+      <footer class="deck-foot"><span class="speaker-note">点击一张关键卡：展示页码/原文锚点，再说明三种处置会影响重算。</span><span class="timecode">02:35–03:25</span></footer>
+    </section>
+
+    <section class="slide" data-slide="5" aria-labelledby="closing-title" hidden>
+      <header class="deck-head">
+        <div class="deck-mark"><img src="../design-system/neurotrace-logo.svg" alt="NEUROTRACE"></div>
+        <span class="deck-kicker">团队与交付</span>
+        <span class="slide-index">06 / 06</span>
+      </header>
+      <div class="slide-body closing-layout">
+        <div class="closing-copy">
+          <div>
+            <p class="eyebrow">LONGFUGE · 第三届 DGX Spark 黑客松比赛</p>
+            <h2 id="closing-title">结论可回查，<br>边界不丢失。</h2>
+            <p class="lede">NeuroTrace 的价值不在替研究者下结论，而在把支持、条件、反证与人工判断放进同一条可复跑的本地调查链路。</p>
+          </div>
+          <div class="role-grid" aria-label="团队分工">
+            <article class="role-card role-card--lead"><h3>吴昊 · 队长</h3><p>项目统筹；领域证据与人工核验；产品逻辑、交互规格与 UI 视觉规范。</p></article>
+            <article class="role-card role-card--tech"><h3>梁文豪 · 队员</h3><p>本地服务与模型链路；数据契约、前端接入与部署；可复跑验证与演示支撑。</p></article>
+          </div>
+        </div>
+        <figure class="capture closing-capture">
+          <img src="../ui-mockups/neurotrace-case-dossier-review-v2.png" width="1440" height="900" alt="NeuroTrace 案件卷宗与导出界面">
+          <figcaption>收尾演示：导出卷宗，并强调文献事实与研究推论的分隔。</figcaption>
+        </figure>
+      </div>
+      <footer class="deck-foot"><span class="speaker-note">展示卷宗导出后收束：感谢评委，并邀请查看本地演示链路。</span><span class="timecode">03:25–04:30</span></footer>
+    </section>
+  </main>
+
+  <div class="control-row" aria-label="幻灯片控制">
+    <button class="slide-control" id="previous" type="button" aria-label="上一页" title="上一页（左方向键）"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.7 2.2 4.9 8l5.8 5.8-1.4 1.4L2.1 8l7.2-7.2z"/></svg></button>
+    <button class="slide-control" id="next" type="button" aria-label="下一页" title="下一页（右方向键）"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5.3 2.2 1.4-1.4L13.9 8l-7.2 7.2-1.4-1.4L11.1 8z"/></svg></button>
+    <button class="slide-control" id="fullscreen" type="button" aria-label="全屏播放" title="全屏播放（F）"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h5v2H4v3H2zm7 0h5v5h-2V4H9zM2 9h2v3h3v2H2zm10 0h2v5H9v-2h3z"/></svg></button>
+  </div>
+  <p class="screen-reader" id="slide-announcement" aria-live="polite"></p>
+
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const previous = document.querySelector('#previous');
+      const next = document.querySelector('#next');
+      const fullscreen = document.querySelector('#fullscreen');
+      const announcement = document.querySelector('#slide-announcement');
+      let index = 0;
+
+      function render(target) {
+        index = Math.max(0, Math.min(target, slides.length - 1));
+        slides.forEach((slide, position) => {
+          const active = position === index;
+          slide.classList.toggle('is-active', active);
+          slide.hidden = !active;
+        });
+        previous.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+        announcement.textContent = `第 ${index + 1} 页，共 ${slides.length} 页`;
+      }
+
+      previous.addEventListener('click', () => render(index - 1));
+      next.addEventListener('click', () => render(index + 1));
+      fullscreen.addEventListener('click', async () => {
+        try {
+          if (document.fullscreenElement) await document.exitFullscreen();
+          else await document.documentElement.requestFullscreen();
+        } catch {
+          fullscreen.dataset.state = 'error';
+          setTimeout(() => delete fullscreen.dataset.state, 1600);
+        }
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft' || event.key === 'PageUp') { event.preventDefault(); render(index - 1); }
+        if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') { event.preventDefault(); render(index + 1); }
+        if (event.key.toLowerCase() === 'f') fullscreen.click();
+        if (event.key === 'Home') { event.preventDefault(); render(0); }
+        if (event.key === 'End') { event.preventDefault(); render(slides.length - 1); }
+      });
+      render(0);
+    })();
+  </script>
+</body>
+</html>
+

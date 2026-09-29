@@ -1,0 +1,55 @@
+{
+  "contract_version": "1.0",
+  "contract_date": "2026-09-29",
+  "source_corpus_version_id": "neurotrace-corpus-2026-09-28-v2.3",
+  "source_schema_version": "2.1",
+  "source_manifest_sha256": "b398db26f43de2a2f58cb63811467d093404812fd2ee1f0d80f3e0353701bbcb",
+  "source_files": {
+    "corpus_version": "corpus_version.json",
+    "corpus_manifest": "corpus_manifest.csv",
+    "paper_records": "paper_records.json",
+    "evidence_cards": "evidence_cards.json",
+    "evidence_schema": "evidence_schema_v2.json",
+    "evidence_relations": "evidence_relations.json",
+    "gold_cases": "gold_cases.json"
+  },
+  "pdf_layout": {
+    "root_config_key": "NEUROTRACE_CORPUS_ROOT",
+    "relative_pattern": "pdfs/{attachment_key}/{filename}",
+    "source_is_read_only": true,
+    "forbidden_path_dependencies": [
+      "C:\\Users\\24467\\Zotero\\storage",
+      "Zotero local API",
+      "network retrieval"
+    ]
+  },
+  "content_counts": {
+    "physical_pdfs": 38,
+    "paper_records": 38,
+    "evidence_cards": 48,
+    "default_retrievable_cards": 47,
+    "audit_only_cards": 1
+  },
+  "default_card_selector": {
+    "status": ["anchor_confirmed"],
+    "source_verification_status": ["human_anchor_confirmed"],
+    "exclude_evidence_ids": ["EC-XCECFFQ4-A"]
+  },
+  "audit_only_selector": {
+    "status": ["rejected", "needs_manual_check", "candidate"],
+    "include_evidence_ids": ["EC-XCECFFQ4-A"]
+  },
+  "integrity_rules": {
+    "verify_pdf_sha256_before_indexing": true,
+    "verify_page_range_before_indexing": true,
+    "verify_quote_before_citation_ready": true,
+    "write_new_version_on_pdf_byte_change": true,
+    "preserve_case_corpus_snapshot": true
+  },
+  "scientific_boundary": {
+    "direct_support_count": 0,
+    "prohibit_unqualified_universal_claims": true,
+    "require_counterevidence_handling": true
+  }
+}
+

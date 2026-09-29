@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="NeuroTrace low-pixel component showroom" />
+    <title>NeuroTrace · Component Showroom</title>
+    <link rel="stylesheet" href="../design-system/components.css" />
+    <link rel="stylesheet" href="showcase.css" />
+  </head>
+  <body>
+    <header class="showcase-header">
+      <a class="showcase-brand" href="#top" aria-label="回到展厅顶部">
+        <img src="../design-system/neurotrace-logo.svg" alt="NeuroTrace" width="260" height="40" />
+      </a>
+      <nav class="showcase-nav" aria-label="展厅目录">
+        <a href="#foundation">基础</a>
+        <a href="#components">组件</a>
+        <a href="#states">状态</a>
+        <a href="#responsive">窄屏</a>
+      </nav>
+      <a class="nt-button nt-button--primary showcase-contract" href="../design-system/DESIGN_CONTRACT.md">查看契约</a>
+    </header>
+
+    <main id="top" class="showcase-shell">
+      <aside class="showcase-rail" aria-label="资产包索引">
+        <p class="nt-kicker">Asset pack v1</p>
+        <p>将已审核的低像素设计转为可复用的开发组件。</p>
+        <ul>
+          <li><a href="../design-system/tokens.css">tokens.css</a></li>
+          <li><a href="../design-system/tokens.json">tokens.json</a></li>
+          <li><a href="../design-system/neurotrace-logo.svg">logo.svg</a></li>
+          <li><a href="../design-system/neurotrace-icons.svg">icons.svg</a></li>
+          <li><a href="../design-system/components.css">components.css</a></li>
+        </ul>
+        <hr class="nt-rule" />
+        <p class="nt-caption">预览都是真实 DOM 组件。可复制示例，并以现有四种 Trace 姿态作为唯一角色来源。</p>
+      </aside>
+
+      <div class="showcase-content">
+        <section class="showcase-intro nt-panel" aria-labelledby="showcase-title">
+          <div>
+            <p class="nt-kicker">NeuroTrace / low-pixel system</p>
+            <h1 id="showcase-title">直接预览，直接开发。</h1>
+            <p>这里保留设计稿的纸张、深蓝工作台、硬像素边框与受控状态色；不引入难以复现的纹理、柔光或游戏化动效。</p>
+          </div>
+          <div class="showcase-intro__stamp nt-pixel">READY FOR BUILD</div>
+        </section>
+
+        <section id="foundation" class="showcase-section" aria-labelledby="foundation-title">
+          <h2 id="foundation-title">基础规则</h2>
+          <div class="foundation-grid">
+            <article class="showcase-block nt-panel">
+              <p class="nt-kicker">Palette</p>
+              <div class="swatches" aria-label="NeuroTrace colour palette">
+                <span class="swatch swatch--canvas">CANVAS</span>
+                <span class="swatch swatch--panel">PANEL</span>
+                <span class="swatch swatch--paper">PAPER</span>
+                <span class="swatch swatch--teal">VERIFY</span>
+                <span class="swatch swatch--amber">PENDING</span>
+                <span class="swatch swatch--red">REJECT</span>
+              </div>
+            </article>
+            <article class="showcase-block nt-panel type-specimen">
+              <p class="nt-kicker">Type + geometry</p>
+              <p class="type-specimen__pixel">EVIDENCE / 08:42:17</p>
+              <p class="type-specimen__body">研究结论以可读正文呈现；精确状态、按钮和数据标签使用像素等宽字。</p>
+              <div class="geometry-rule"><span>8PX GRID</span><i></i><i></i><i></i><i></i></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="components" class="showcase-section" aria-labelledby="components-title">
+          <h2 id="components-title">核心组件</h2>
+          <div class="demo-grid">
+            <article class="demo-block demo-block--wide nt-panel">
+              <div class="demo-block__head"><div><p class="nt-kicker">Actions</p><h3>Button</h3></div><button class="copy-button" data-copy="&lt;button class=&quot;nt-button nt-button--primary&quot;&gt;开始调查&lt;/button&gt;">复制</button></div>
+              <div class="demo-preview state-matrix" aria-label="按钮八种状态">
+                <div class="state-row"><span class="state-row__label">默认</span><button class="nt-button nt-button--primary"><span class="nt-icon" aria-hidden="true"><svg><use href="../design-system/neurotrace-icons.svg#nt-scan" /></svg></span>开始调查</button></div>
+                <div class="state-row"><span class="state-row__label">悬停</span><button class="nt-button is-hover">查看原文</button></div>
+                <div class="state-row"><span class="state-row__label">焦点</span><button class="nt-button is-focus">焦点状态</button></div>
+                <div class="state-row"><span class="state-row__label">按下</span><button class="nt-button is-active">按下状态</button></div>
+                <div class="state-row"><span class="state-row__label">禁用</span><button class="nt-button" disabled>不可用</button></div>
+                <div class="state-row"><span class="state-row__label">加载</span><button class="nt-button" data-state="loading">处理中</button></div>
+                <div class="state-row"><span class="state-row__label">错误</span><button class="nt-button" data-state="error">重试操作</button></div>
+                <div class="state-row"><span class="state-row__label">成功</span><button class="nt-button" data-state="success">已保存</button></div>
+              </div>
+              <pre class="code-sample"><code>&lt;button class="nt-button nt-button--primary"&gt;开始调查&lt;/button&gt;</code></pre>
+            </article>
+
+            <article class="demo-block nt-panel">
+              <div class="demo-block__head"><div><p class="nt-kicker">Signal</p><h3>Status Tag</h3></div></div>
+              <div class="demo-preview tag-stack">
+                <span class="nt-tag nt-tag--support">已核验 / 支持</span>
+                <span class="nt-tag nt-tag--qualify">边界待确认</span>
+                <span class="nt-tag nt-tag--counter">已驳回</span>
+                <span class="nt-tag nt-tag--neutral">未开始</span>
+              </div>
+            </article>
+
+            <article class="demo-block nt-panel">
+              <div class="demo-block__head"><div><p class="nt-kicker">Input</p><h3>Research field</h3></div></div>
+              <div class="demo-preview form-stack">
+                <label class="nt-field"><span class="nt-label">研究问题</span><input class="nt-input" value="睡眠干预是否改善工作记忆？" /></label>
+                <label class="nt-field"><span class="nt-label">核验理由</span><textarea class="nt-input" aria-invalid="true" placeholder="驳回时必填"></textarea><span class="nt-field__error">请录入理由后再提交。</span></label>
+                <div class="state-matrix" aria-label="输入框八种状态">
+                  <div class="state-row"><span class="state-row__label">默认</span><input class="nt-input" value="研究问题" /></div>
+                  <div class="state-row"><span class="state-row__label">悬停</span><input class="nt-input is-hover" value="研究问题" /></div>
+                  <div class="state-row"><span class="state-row__label">焦点</span><input class="nt-input is-focus" value="研究问题" /></div>
+                  <div class="state-row"><span class="state-row__label">按下</span><input class="nt-input is-active" value="研究问题" /></div>
+                  <div class="state-row"><span class="state-row__label">禁用</span><input class="nt-input" value="不可编辑" disabled /></div>
+                  <div class="state-row"><span class="state-row__label">加载</span><input class="nt-input" data-state="loading" value="正在校验" /></div>
+                  <div class="state-row"><span class="state-row__label">错误</span><input class="nt-input" data-state="error" value="需要修正" /></div>
+                  <div class="state-row"><span class="state-row__label">成功</span><input class="nt-input" data-state="success" value="已验证" /></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="demo-block demo-block--evidence nt-panel">
+              <div class="demo-block__head"><div><p class="nt-kicker">Evidence</p><h3>Evidence card</h3></div><button class="copy-button" data-copy="nt-evidence-card">复制类名</button></div>
+              <article class="nt-evidence-card">
+                <div class="nt-evidence-card__meta"><span>Huang et al. · 2024</span><span class="nt-tag nt-tag--support">支持</span></div>
+                <h3>规律睡眠改善工作记忆表现</h3>
+                <p>在受控睡眠时长条件下，干预组于工作记忆任务中表现出稳定提升。</p>
+                <p class="nt-evidence-card__condition">条件：成年样本；连续 14 天；基线睡眠不足。</p>
+                <button class="nt-button nt-button--paper">查看原文 · P.12</button>
+              </article>
+            </article>
+
+            <article class="demo-block demo-block--wide nt-panel">
+              <div class="demo-block__head"><div><p class="nt-kicker">Progress</p><h3>运行组件（Fixture）</h3></div></div>
+              <div class="demo-preview progress-stack">
+                <div class="nt-progress"><span>文献检索（样例）</span><div class="nt-progress__rail"><div class="nt-progress__value" style="--nt-progress-scale: .72"></div></div><span>72%</span></div>
+                <div class="nt-progress"><span>向量比对（样例）</span><div class="nt-progress__rail"><div class="nt-progress__value" style="--nt-progress-scale: .46"></div></div><span>46%</span></div>
+                <div class="execution-log" aria-label="运行事件样例"><span>fixture</span><span>事件字段等待真实后端接入</span><span class="nt-tag nt-tag--neutral">演示专用</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="states" class="showcase-section" aria-labelledby="states-title">
+          <h2 id="states-title">状态与操作反馈</h2>
+          <div class="states-layout">
+            <article class="showcase-block nt-panel trace-block">
+              <p class="nt-kicker">Trace posture</p>
+              <div class="nt-tabs" role="tablist" aria-label="Trace posture variants">
+                <button class="nt-tab" role="tab" aria-selected="true" aria-controls="trace-listening" id="tab-listening" data-tab="trace-listening">聆听</button>
+                <button class="nt-tab" role="tab" aria-selected="false" aria-controls="trace-thinking" id="tab-thinking" data-tab="trace-thinking">思考</button>
+                <button class="nt-tab" role="tab" aria-selected="false" aria-controls="trace-scanning" id="tab-scanning" data-tab="trace-scanning">扫描</button>
+                <button class="nt-tab" role="tab" aria-selected="false" aria-controls="trace-presenting" id="tab-presenting" data-tab="trace-presenting">呈现</button>
+              </div>
+              <div class="nt-tab-panel" id="trace-listening" role="tabpanel" aria-labelledby="tab-listening"><img class="nt-trace" src="../trace-postures/trace-listening.png" alt="Trace 聆听姿态" /></div>
+              <div class="nt-tab-panel" id="trace-thinking" role="tabpanel" aria-labelledby="tab-thinking" hidden><img class="nt-trace" src="../trace-postures/trace-thinking.png" alt="Trace 思考姿态" /></div>
+              <div class="nt-tab-panel" id="trace-scanning" role="tabpanel" aria-labelledby="tab-scanning" hidden><img class="nt-trace" src="../trace-postures/trace-scanning.png" alt="Trace 扫描姿态" /></div>
+              <div class="nt-tab-panel" id="trace-presenting" role="tabpanel" aria-labelledby="tab-presenting" hidden><img class="nt-trace" src="../trace-postures/trace-presenting.png" alt="Trace 呈现姿态" /></div>
+            </article>
+            <article class="showcase-block nt-panel">
+              <p class="nt-kicker">Operation feedback</p>
+              <div class="feedback-stack">
+                <button class="nt-button nt-button--primary" data-toast="证据已纳入判断支撑网络。" data-tone="success"><span class="nt-icon"><svg><use href="../design-system/neurotrace-icons.svg#nt-check" /></svg></span>确认采用</button>
+                <button class="nt-button" data-toast="证据已暂缓，保留在核验队列。" data-tone="warning"><span class="nt-icon"><svg><use href="../design-system/neurotrace-icons.svg#nt-pause" /></svg></span>暂缓核验</button>
+                <button class="nt-button nt-button--danger" data-dialog="reject-dialog"><span class="nt-icon"><svg><use href="../design-system/neurotrace-icons.svg#nt-reject" /></svg></span>驳回并重算</button>
+                <button class="nt-button" data-dialog="export-dialog"><span class="nt-icon"><svg><use href="../design-system/neurotrace-icons.svg#nt-download" /></svg></span>导出卷宗</button>
+                <button class="nt-button" data-demo-loading>演示加载态</button>
+              </div>
+              <div class="loading-row"><span>局部重算</span><div class="nt-skeleton" aria-label="载入中"></div><div class="nt-skeleton" aria-hidden="true"></div></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="responsive" class="showcase-section" aria-labelledby="responsive-title">
+          <h2 id="responsive-title">窄屏工作台收纳</h2>
+          <article class="responsive-demo nt-panel">
+            <div class="responsive-demo__head"><p class="nt-kicker">Workbench / &lt; 1024px</p><span class="nt-tag nt-tag--qualify">窄屏模式</span></div>
+            <div class="mobile-workbench" aria-label="窄屏工作台布局示意">
+              <div class="mobile-workbench__bar">案件：NT-024 · 调查中 <button aria-label="打开案件导航">☰</button></div>
+              <div class="mobile-workbench__assessment"><span class="nt-kicker">当前判断</span><strong>证据支持仍受样本边界限定</strong></div>
+              <div class="mobile-workbench__actions"><button class="nt-button nt-button--primary">核验证据</button><button class="nt-button">事件流</button></div>
+              <div class="mobile-workbench__cards"><span class="nt-tag nt-tag--support">证据 08</span><span class="nt-tag nt-tag--qualify">待核验 03</span></div>
+              <div class="mobile-workbench__dock"><span>基线</span><span>判断</span><span>核验</span><span>卷宗</span></div>
+            </div>
+            <p class="nt-caption">窄屏时保留“当前判断”与主操作；基线、执行流和卷宗改为明确可打开的上下文层，不并排压缩。</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <dialog id="reject-dialog" class="nt-dialog" aria-labelledby="reject-title">
+      <form class="nt-dialog__body" method="dialog" id="reject-form">
+        <div class="nt-dialog__head"><div><p class="nt-kicker">Critical verification</p><h2 id="reject-title">驳回证据并重算</h2></div><button class="nt-toast__close" value="cancel" aria-label="关闭">✕</button></div>
+        <p class="nt-caption">驳回必须保留原因。提交后只刷新关联判断与条件矩阵。</p>
+        <label class="nt-field"><span class="nt-label">驳回理由（必填）</span><textarea class="nt-input" name="reason" required placeholder="例如：实验条件不适用于本案样本"></textarea></label>
+        <div class="nt-dialog__actions"><button class="nt-button" value="cancel">取消</button><button class="nt-button nt-button--danger" value="confirm">提交并重算</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="export-dialog" class="nt-dialog" aria-labelledby="export-title">
+      <form class="nt-dialog__body" method="dialog" id="export-form">
+        <div class="nt-dialog__head"><div><p class="nt-kicker">Case dossier</p><h2 id="export-title">导出案件卷宗</h2></div><button class="nt-toast__close" value="cancel" aria-label="关闭">✕</button></div>
+        <p class="nt-caption">导出结构会硬隔离“文献实证事实”与“研究假设/推论建议”。</p>
+        <div class="nt-dialog__actions"><button class="nt-button" value="cancel">取消</button><button class="nt-button nt-button--primary" value="confirm">生成归档</button></div>
+      </form>
+    </dialog>
+
+    <div class="nt-toast-region" aria-live="polite" aria-label="操作反馈"></div>
+    <script src="showcase.js"></script>
+  </body>
+</html>
+

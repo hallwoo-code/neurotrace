@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.1",
+  "canonical_evidence_roles": [
+    "direct_support",
+    "conditional_support",
+    "boundary",
+    "counterevidence",
+    "insufficient"
+  ],
+  "canonical_statuses": [
+    "candidate",
+    "anchor_confirmed",
+    "decision_ready",
+    "rejected",
+    "needs_manual_check"
+  ],
+  "required_card_fields": [
+    "evidence_id",
+    "paper_id",
+    "zotero_item_key",
+    "bibtex_key",
+    "attachment_key",
+    "pdf_sha256",
+    "pdf_page",
+    "section",
+    "original_quote",
+    "chinese_interpretation",
+    "machine_anchor",
+    "status",
+    "printed_page_label",
+    "section_locator_status",
+    "quote_completeness",
+    "quote_audit",
+    "metadata_completeness",
+    "needs_manual_metadata_check",
+    "evidence_role",
+    "role_rationale"
+  ],
+  "rule": "Only a human reviewer may set anchor_confirmed.",
+  "release_rules": {
+    "quote": "Quote must match the specified PDF page after Unicode, whitespace, and line-break hyphenation normalization.",
+    "printed_page": "Use a printed page when visible; otherwise state article number/no printed page without inventing pagination.",
+    "metadata": "Missing title/authors/year/venue/DOI sets needs_manual_metadata_check=true.",
+    "gold_evaluation": "Fixture consistency is not model-performance evaluation."
+  }
+}

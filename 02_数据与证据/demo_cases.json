@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {
+      "case_id": "NT-DEMO-01",
+      "research_question": "情绪性是否改变隐喻/语言语义整合中的N400与晚期成分？",
+      "bounded_judgment": "在具体任务、语言背景与成分窗口下，情绪性可能调节语义整合；不得概括为通用增益。",
+      "required_claim_slots": [
+        "mechanism_or_boundary"
+      ],
+      "relation_ids": [
+        "ER-01-1",
+        "ER-01-2",
+        "ER-01-3",
+        "ER-01-4"
+      ],
+      "status": "candidate"
+    },
+    {
+      "case_id": "NT-DEMO-02",
+      "research_question": "LPP/LPC能否被作为情绪唤醒或调节成功的单一读出？",
+      "bounded_judgment": "不能将LPP/LPC简化为单一唤醒指标；重评、年龄、任务和刺激熟悉度均可能改变解释。",
+      "required_claim_slots": [
+        "mechanism_or_boundary"
+      ],
+      "relation_ids": [
+        "ER-02-1",
+        "ER-02-2",
+        "ER-02-3",
+        "ER-02-4"
+      ],
+      "status": "candidate"
+    },
+    {
+      "case_id": "NT-DEMO-03",
+      "research_question": "N400与LPC/P600如何共同刻画隐喻理解的早晚阶段？",
+      "bounded_judgment": "N400与晚期成分的差异依赖语境、常规性、任务和语言经验；只在可比范式内综合。",
+      "required_claim_slots": [
+        "mechanism_or_boundary"
+      ],
+      "relation_ids": [
+        "ER-03-1",
+        "ER-03-2",
+        "ER-03-3",
+        "ER-03-4"
+      ],
+      "status": "candidate"
+    }
+  ]
+}

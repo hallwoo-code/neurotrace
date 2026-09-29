@@ -1,0 +1,108 @@
+{
+  "corpus_version_id": "neurotrace-corpus-2026-09-28-v2.3",
+  "generated_date": "2026-09-28",
+  "previous_version": "neurotrace-corpus-v1",
+  "schema_version": "2.1",
+  "scope": "collection, collection2, Metaph及其子文件夹, paper1；只读Zotero",
+  "frozen_readable_papers": 38,
+  "manifest_sha256": "b398db26f43de2a2f58cb63811467d093404812fd2ee1f0d80f3e0353701bbcb",
+  "cards": 48,
+  "machine_page_quote_matched": 48,
+  "human_anchor_confirmed": 47,
+  "change_summary": "冻结库仅保留可读PDF；新增5篇可读机制/边界候选；5篇缺PDF移入扩展池；加入PDF哈希、证据关系、DemoCases与GoldCase夹具。",
+  "failures": [],
+  "manual_review_update": {
+    "date": "2026-09-28",
+    "reviewed_priority_anchors": 12,
+    "confirmed": 9,
+    "replacement_required": 3
+  },
+  "replacement_anchor_update": {
+    "date": "2026-09-28",
+    "updated_cards": [
+      "EC-8XBDTNCB-A",
+      "EC-9PIPX6I5-A",
+      "EC-8HE4L22P-A"
+    ],
+    "confirmed": 3
+  },
+  "new_candidate_review_update": {
+    "date": "2026-09-28",
+    "reviewed": 5,
+    "confirmed": 4,
+    "rejected": 1,
+    "replacement_required_for_frozen_count": 1
+  },
+  "batch_three_manual_review": {
+    "date": "2026-09-28",
+    "confirmed": 9,
+    "roles": {
+      "conditional_support": 3,
+      "boundary": 3,
+      "counterevidence": 2,
+      "duplicate_pending": [
+        "EC-M256T5QC-A"
+      ]
+    }
+  },
+  "batch_four_manual_review": {
+    "date": "2026-09-28",
+    "confirmed": 8,
+    "roles": {
+      "conditional_support": 4,
+      "boundary": 3,
+      "counterevidence": 1
+    }
+  },
+  "batch_five_manual_review": {
+    "date": "2026-09-28",
+    "confirmed": 5,
+    "duplicate_independence_pending": [
+      "EC-KGUAISW6-A",
+      "EC-M256T5QC-A"
+    ]
+  },
+  "duplicate_independence_update": {
+    "date": "2026-09-28",
+    "papers": [
+      "M256T5QC",
+      "KGUAISW6"
+    ],
+    "decision": "independent_user_confirmed"
+  },
+  "human_rejected": 1,
+  "final_anchor_review_update": {
+    "date": "2026-09-28",
+    "updated_cards": 9,
+    "manual_anchor_review_status": "complete",
+    "card_level_roles_materialized": 48
+  },
+  "frozen_active_readable_papers": 37,
+  "excluded_readable_records": 1,
+  "gold_fixture_consistency_passed": 12,
+  "gold_fixture_consistency_failed": 0,
+  "sections_not_located": 0,
+  "release_status": "final_release_passed_with_scientific_boundary_disclosures",
+  "sections_located": 48,
+  "printed_page_labels_complete": 48,
+  "quotes_replaced_in_final_audit": 38,
+  "quote_completeness_complete": 48,
+  "paper_metadata_complete": 38,
+  "needs_manual_metadata_check": 0,
+  "evidence_role_counts": {
+    "boundary": 22,
+    "conditional_support": 22,
+    "counterevidence": 3,
+    "insufficient": 1
+  },
+  "direct_support_count": 0,
+  "gold_evaluation_scope": "fixture_consistency_only_not_model_evaluation",
+  "page_relocations": [
+    {
+      "evidence_id": "EC-8AVKRMIR-A",
+      "from_pdf_page": 1,
+      "to_pdf_page": 2,
+      "reason": "PDF page 1 is a publisher cover without an evidentiary sentence; anchor moved to the article abstract."
+    }
+  ]
+}
